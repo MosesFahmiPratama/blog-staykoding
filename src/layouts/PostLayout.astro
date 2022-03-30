@@ -1,0 +1,46 @@
+---
+import BaseLayout from './BaseLayout.astro'
+
+  //get data postingan dari file markdown di folder pages
+  const allPosts = Astro.fetchContent('../pages/*.md');
+  //uritkan setiap data postingan berdasarkan tanggal terbaru
+  const sortedPost = allPosts.sort((a,b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+  
+  //inisialisasi jumlah postingan untuk ditampilkan
+  const jml_data = 3;
+  const dataPost = sortedPost.slice(0, jml_data);
+
+const {content} = Astro.props;
+---
+	
+<BaseLayout title={content.title}>
+  <article class="article-post">
+		<main>
+			<div class="title-post">
+				<h1>{content.title}</h1>
+			</div>
+			<!-- render single artikel -->
+	      <slot />
+      <!-- end render -->
+		</main>
+		<aside>
+		  <div class="widget">
+				<div class="title-widget">
+					Recent Post
+				</div>
+				<div class="list-post">
+					<ul>
+					
+					  {dataPost.map(item => (
+					    <li>
+  							<img src={item.img} alt="">
+  							<a href={item.url}>{item.title}</a>
+  						</li>
+            ))}
+
+					</ul>
+				</div>
+			</div>
+		</aside>
+	</article>
+</BaseLayout>

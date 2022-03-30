@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Pagination from '../components/Paginator.astro'
+
+export async function getStaticPaths({rss, paginate}) {
+  const allPosts = Astro.fetchContent('./*.md');
+  const sortedPost = allPosts.sort((a,b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
+  
+  rss({
+    //The RSS Feeds title, description, and custom metadata.
+    title: 'StayKoding',
+    description: 'Example blog in astro',
+    customData: '<language>en-id</language>',
+    //The list of items for your rss feed, sorted
+    items: sortedPost.map(item => ({
+      title: item.title,
+      description: item.description,
+      link: item.url,
+      pubDate: item.date,
+    })),
+    //Optional customize where the file is written to.
+    //otherwize, defaults to '/rss.xml'
+    dest: '/feed.xml',
+  });
+  
+  return paginate(sortedPost, {pageSize: 2});
+}
+
+const {page} = Astro.props;
+const title = "StayKoding";
+---
+
+<BaseLayout title={title}>
+<article class="post">
+		<section class="featured">
+			<div class="head-featured">
+				<span class="head-featured__title">
+					Featured Post
+				</span>
+			</div>
+			<div class="card-featured">
+				<div class="image-featured">
+					<img src="https://i.ibb.co/2ccYCCb/img-post-1.jpg" alt="" width="400" height="500">
+				</div>
+				<div class="description">
+					<h2>Learn To Code</h2>
+					<span class="line"></span>
+					<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Modi suscipit minus mollitia, nam illum repellat voluptatibus provident pariatur temporibus corporis repellendus eaque.</p>
+					<div class="read-more">
+						<a href="#">Read More</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="new-post">
+			<div class="head-post">
+				<span class="head-post__title">
+					New Post
+				</span>
+			</div>
+			<div class="card-container">
+			  {page.data.map((post) => (
+          <div class="card">
+  					<div class="image">
+  						<img src={post.img} alt="" width="300">
+  						<span class="label">
+  							<i class="fas fa-tags"></i> 
+  							Pemrograman
+  						</span>
+  					</div>
+  					<div class="judul">
+  						<h2><a href={post.url}>{post.title}</a></h2>
+  						<p class="author"><span><img src="https://i.ibb.co/SJv7LY0/admin-staykoding.jpg" width="40" alt=""></span>by {post.author}</p>
+  						<a class="read-more" href={post.url}>Read more</a>
+  					</div>
+  				</div>
+          ))}
+			</div>
+				
+			<Pagination page={page}/>
+			
+		</section>
+	</article>
+</BaseLayout>
