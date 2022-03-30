@@ -7,4 +7,9 @@ export default defineConfig({
     site: 'https://staykoding.com',
     sitemap: true,         // Generate sitemap (set to "false" to disable)
   },
+  vite: {
+    ssr: {
+      external: ["svgo"],
+    },
+  },
 });
