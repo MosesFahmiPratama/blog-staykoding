@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>StayKoding</title>
 	<link rel="stylesheet" href="../css/global.css">
-	<link rel="stylesheet" href="css/all.min.css">
 
 	<!-- load font poppins -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,16 +40,31 @@
 		</span>
 		<div class="menu">
 			<span class="close_menu">
-				<i class="fas fa-times"></i>
+				<svg viewBox="0 0 16 16" width="20" astro-icon="codicon:chrome-close"><path fill="currentColor" fill-rule="evenodd" d="m7.116 8-4.558 4.558.884.884L8 8.884l4.558 4.558.884-.884L8.884 8l4.558-4.558-.884-.884L8 7.116 3.442 2.558l-.884.884L7.116 8z" clip-rule="evenodd"/></svg>
+
 			</span>
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a href="/">Home</a></li>
 				<li><a href="#">Pemrograman</a></li>
 				<li><a href="#">Framework</a></li>
 				<li><a href="#">Tutorials</a></li>
 			</ul>
 		</div>
 	</nav>
+	
+<script>
+const btn_menu = document.querySelector('.btn_menu');
+const close_menu = document.querySelector('.close_menu');
+const menu = document.querySelector('.menu');
+
+btn_menu.onclick = () => {
+  menu.classList.add('active');
+}
+close_menu.onclick = () => {
+  menu.classList.remove('active');
+}
+
+</script>
 <!-- render artikel -->
 	<article class="post">
 		<section class="featured">
@@ -61,14 +75,14 @@
 			</div>
 			<div class="card-featured">
 				<div class="image-featured">
-					<img src="https://i.ibb.co/2ccYCCb/img-post-1.jpg" alt="" width="400" height="500">
+					<img src="https://i.ibb.co/DWCmBHV/login1.jpg" alt="" width="400" height="500">
 				</div>
 				<div class="description">
-					<h2>Learn To Code</h2>
+					<h2>Cara instal react js mantap</h2>
 					<span class="line"></span>
-					<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Modi suscipit minus mollitia, nam illum repellat voluptatibus provident pariatur temporibus corporis repellendus eaque.</p>
+					<p>Ini adalah contoh Blog</p>
 					<div class="read-more">
-						<a href="#">Read More</a>
+						<a href="/post-1">Read More</a>
 					</div>
 				</div>
 			</div>
@@ -82,11 +96,25 @@
 			<div class="card-container">
 			  <div class="card">
   					<div class="image">
+  						<img src="https://i.ibb.co/khWF9Ff/img-post-2.jpg" alt="" width="300">
+  						<span class="label">
+  							<svg viewBox="0 0 352 512" width="14" astro-icon="ps:label"><path fill="currentColor" d="M325 0H27Q17 0 11 6T5 21v465q0 9 6.5 15.5T27 508q7 0 15-5l121-106q4-4 15-4 7 0 15 4l122 106q4 5 15 5 8 0 14.5-6.5T351 486V21q-7-21-26-21zm-21 439-85-74q-15-15-43-15-21 0-43 15l-85 74V43h256v396z"/></svg>
+ 
+  							<span>Pemrograman</span>
+  						</span>
+  					</div>
+  					<div class="judul">
+  						<h2><a href="/post-2">Mengenal framework laravel</a></h2>
+  						<p class="author"><span><img src="https://i.ibb.co/SJv7LY0/admin-staykoding.jpg" width="40" alt=""></span>by Moses Fahmi Pratama</p>
+  						<a class="read-more" href="/post-2">Read more</a>
+  					</div>
+  				</div><div class="card">
+  					<div class="image">
   						<img src="https://i.ibb.co/DWCmBHV/login1.jpg" alt="" width="300">
   						<span class="label">
   							<svg viewBox="0 0 352 512" width="14" astro-icon="ps:label"><path fill="currentColor" d="M325 0H27Q17 0 11 6T5 21v465q0 9 6.5 15.5T27 508q7 0 15-5l121-106q4-4 15-4 7 0 15 4l122 106q4 5 15 5 8 0 14.5-6.5T351 486V21q-7-21-26-21zm-21 439-85-74q-15-15-43-15-21 0-43 15l-85 74V43h256v396z"/></svg>
  
-  							Pemrograman
+  							<span>Pemrograman</span>
   						</span>
   					</div>
   					<div class="judul">
@@ -109,7 +137,7 @@
 		<div class="footer-main">
 			<section class="about">
 				<h3>About</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo optio perspiciatis cupiditate quaerat, fugiat nostrum illo maiores dolore ut exercitationem ipsum hic corporis nam impedit, id, voluptatibus quae repellat iste.</p>
+				<p>staykoding merupakan blog yang membahas seputar dunia pemrograman dan pembelajaran serta tutorial pemrograman terkhususnya web development.</p>
 			</section>
 			<section class="page">
 				<ul>

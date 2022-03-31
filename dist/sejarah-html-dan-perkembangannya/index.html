@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mengenal Sejarah HTML dan versinya</title>
 	<link rel="stylesheet" href="../css/global.css">
-	<link rel="stylesheet" href="css/all.min.css">
 
 	<!-- load font poppins -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,16 +40,31 @@
 		</span>
 		<div class="menu">
 			<span class="close_menu">
-				<i class="fas fa-times"></i>
+				<svg viewBox="0 0 16 16" width="20" astro-icon="codicon:chrome-close"><path fill="currentColor" fill-rule="evenodd" d="m7.116 8-4.558 4.558.884.884L8 8.884l4.558 4.558.884-.884L8.884 8l4.558-4.558-.884-.884L8 7.116 3.442 2.558l-.884.884L7.116 8z" clip-rule="evenodd"/></svg>
+
 			</span>
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a href="/">Home</a></li>
 				<li><a href="#">Pemrograman</a></li>
 				<li><a href="#">Framework</a></li>
 				<li><a href="#">Tutorials</a></li>
 			</ul>
 		</div>
 	</nav>
+	
+<script>
+const btn_menu = document.querySelector('.btn_menu');
+const close_menu = document.querySelector('.close_menu');
+const menu = document.querySelector('.menu');
+
+btn_menu.onclick = () => {
+  menu.classList.add('active');
+}
+close_menu.onclick = () => {
+  menu.classList.remove('active');
+}
+
+</script>
 <!-- render artikel -->
 	<article class="article-post">
 		<main>
@@ -64,40 +78,40 @@
 Contoh penulisan html 1.0 diawali dengan 
 
  
-<pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&lt;html&gt; </span></span></code></pre><h3 id="2-html-versi-20">2. HTML Versi 2.0</h3><p>HTML 2.0 merupakan hasil pengembangan dari versi sebelumnya yaitu 1.0 , pada versi ini telah ditambahkan tag-tag baru saat itu dan digunakan sampai akhir tahun 1997.</p>
+<pre class="language-null"><code class="language-null">&lt;html> </code></pre><h3 id="2-html-versi-20">2. HTML Versi 2.0</h3><p>HTML 2.0 merupakan hasil pengembangan dari versi sebelumnya yaitu 1.0 , pada versi ini telah ditambahkan tag-tag baru saat itu dan digunakan sampai akhir tahun 1997.</p>
 Contoh penulisan html 2.0 diawali dengan 
 
  sebelum tag 
 
-<pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;&lt;html&gt;</span></span></code></pre><h3 id="3-html-versi-30">3. HTML Versi 3.0</h3><p>HTML 3.0 merupakan kelanjutan dari versi 2.0 yang saat itu juga telah ditambahkan fitur tambahan seperti <em>tables, math</em> dan <em>text flow</em>. Sayangnya versi ini cepat ditinggalkan karena memberlakukan hal baru pada browser sementara perkembangan browser saat itu belum signifikan.</p>
+<pre class="language-null"><code class="language-null">&lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">&lt;html></code></pre><h3 id="3-html-versi-30">3. HTML Versi 3.0</h3><p>HTML 3.0 merupakan kelanjutan dari versi 2.0 yang saat itu juga telah ditambahkan fitur tambahan seperti <em>tables, math</em> dan <em>text flow</em>. Sayangnya versi ini cepat ditinggalkan karena memberlakukan hal baru pada browser sementara perkembangan browser saat itu belum signifikan.</p>
 Contoh penulisan html 3.0 diawali dengan 
 
  sebelum tag 
 
-<pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 3.0//EN&quot;&gt;&lt;html&gt;</span></span></code></pre><h3 id="4-html-versi-32">4. HTML Versi 3.2</h3><p>Setelah berakhirnya html 3.0 , html versi 3.2 akhirnya di luncurkan yaitu pada tahun 1997 bulan januari tanggal 14. Html versi 3.2 ini saat itu malah direkomendasikan oleh organisasi W3C saat itu karena dinilai kompatibel(dapat bekerja) pada banyak beragam browser waktu itu. serta HTMl 3.2 dijadikan standar resmi html dalam membuat halaman web.</p>
+<pre class="language-null"><code class="language-null">&lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">&lt;html></code></pre><h3 id="4-html-versi-32">4. HTML Versi 3.2</h3><p>Setelah berakhirnya html 3.0 , html versi 3.2 akhirnya di luncurkan yaitu pada tahun 1997 bulan januari tanggal 14. Html versi 3.2 ini saat itu malah direkomendasikan oleh organisasi W3C saat itu karena dinilai kompatibel(dapat bekerja) pada banyak beragam browser waktu itu. serta HTMl 3.2 dijadikan standar resmi html dalam membuat halaman web.</p>
 Contoh penulisan html 3.2 diawali dengan 
 
  sebelum tag 
 
-<pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt; &lt;html&gt;</span></span></code></pre><h3 id="5-html-versi-401">5. HTML Versi 4.01</h3><p>Sebelum HTML Versi 4.01 keluar, HTML Versi 4.0 yang lebih dulu ada. HTML 4.0 diluncurkan pada tahun 1997 tepatnya dibulan desember. HTML 4.0 ini mengalami perubahan besar karena sudah ada yang namanya CSS (Cascading Stylesheet) yaitu kode berbentuk skrip yang berguna untuk mempercantik dan mendesain tampilan halaman website. Akan tetapi pada tahun 1998 HTML dikembangkan lagi dan lahirlah HTML 4.01 yang merupakan perbaikan dari HTML 4.0 yaitu versi  sebelumnya.</p>
+<pre class="language-null"><code class="language-null">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"> &lt;html></code></pre><h3 id="5-html-versi-401">5. HTML Versi 4.01</h3><p>Sebelum HTML Versi 4.01 keluar, HTML Versi 4.0 yang lebih dulu ada. HTML 4.0 diluncurkan pada tahun 1997 tepatnya dibulan desember. HTML 4.0 ini mengalami perubahan besar karena sudah ada yang namanya CSS (Cascading Stylesheet) yaitu kode berbentuk skrip yang berguna untuk mempercantik dan mendesain tampilan halaman website. Akan tetapi pada tahun 1998 HTML dikembangkan lagi dan lahirlah HTML 4.01 yang merupakan perbaikan dari HTML 4.0 yaitu versi  sebelumnya.</p>
 Contoh penulisan html 4.01 diawali dengan 
 
  sebelum tag 
 
-<pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt; &lt;html&gt;</span></span></code></pre><h3 id="6-xhtml-10">6. XHTML 1.0</h3><p>XHTML merupakan kependekan dari The Extensible HyperText Markup Language yaitu gabungan dari bahasa HTML dan XML. XML yaitu EXtensible Markup Language berbeda dengan HTML, XML memiliki fungsi untuk mengirim,menyimpan dan membawa data artinya tidak digunakan dalam hal tampilan website. XHTML diluncurkan pertama kali pada tanggal 26 januari 2000 oleh W3C pengembang dari HTML.</p>
+<pre class="language-null"><code class="language-null">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> &lt;html></code></pre><h3 id="6-xhtml-10">6. XHTML 1.0</h3><p>XHTML merupakan kependekan dari The Extensible HyperText Markup Language yaitu gabungan dari bahasa HTML dan XML. XML yaitu EXtensible Markup Language berbeda dengan HTML, XML memiliki fungsi untuk mengirim,menyimpan dan membawa data artinya tidak digunakan dalam hal tampilan website. XHTML diluncurkan pertama kali pada tanggal 26 januari 2000 oleh W3C pengembang dari HTML.</p>
 Contoh penulisan xhtml 1.0 diawali dengan 
 
  kemudian diikuti dengan 
 
  sebelum tag 
 
-<pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;</span></span></code></pre><h3 id="7-html-5">7. HTML 5</h3><p>HTML 5 hadir dari adanya kerja sama antara W3C dengan sebuah kelompok yang dinamakan WHATWG yaitu Web Hypertext Application Technology Working Group. Sedangkan pada saat itu juga XHTML 2.0 sedang dikembangkan yang kemudian terpaksa dihentikan karena dirasa kurang menarik dan tidak realistis dalam perubahannya. Untuk secara resmi HTML 5 diperkenalkan kepada publik pada tanggal 28 oktober 2014.</p>
+<pre class="language-null"><code class="language-null">&lt;?xml version="1.0" encoding="UTF-8"?>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"></code></pre><h3 id="7-html-5">7. HTML 5</h3><p>HTML 5 hadir dari adanya kerja sama antara W3C dengan sebuah kelompok yang dinamakan WHATWG yaitu Web Hypertext Application Technology Working Group. Sedangkan pada saat itu juga XHTML 2.0 sedang dikembangkan yang kemudian terpaksa dihentikan karena dirasa kurang menarik dan tidak realistis dalam perubahannya. Untuk secara resmi HTML 5 diperkenalkan kepada publik pada tanggal 28 oktober 2014.</p>
 Contoh penulisan html 5 diawali dengan 
 
  sebelum tag 
 
-<pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #c9d1d9">&lt;!DOCTYPE html&gt;</span></span>
-<span class="line"><span style="color: #c9d1d9">&lt;html&gt;</span></span></code></pre><p>Menurut admin sendiri html 5 ini lebih simpel penulisan tag pembukanya dibanding versi-versi sebelumnya serta terdapat banyak tambahan tag baru diantaranya</p><ul>
+<pre class="language-null"><code class="language-null">&lt;!DOCTYPE html>
+&lt;html></code></pre><p>Menurut admin sendiri html 5 ini lebih simpel penulisan tag pembukanya dibanding versi-versi sebelumnya serta terdapat banyak tambahan tag baru diantaranya</p><ul>
 <li>Punya Element baru: audio, aside, article, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, mark, meter, nav, output, progress, rp, rt, ruby, section, source, summary, time, video, wbr</li>
 <li>Punya Attribut baru pada tag form: dates and times, email, url, search, color</li>
 <li>Ada Element yang di hilangkan Deprecated: acronym, applet, basefont, big, center, dir, font, frame, frameset, isindex, noframes, s, strike, tt, u</li>
@@ -115,14 +129,14 @@ Contoh penulisan html 5 diawali dengan
 					<ul>
 					
 					  <li>
+  							<img src="https://1.bp.blogspot.com/-PK52xcFIGlw/YGtcdYM8TrI/AAAAAAAACCM/FzeOcRQwRJgsFNb3qUkfNAlTJd6-eYbvwCNcBGAsYHQ/s1280/sejarah-perkembangan-css.jpg" alt="">
+  							<a href="/sejarah-css-dan-perkembangan-css">Sejarah css dan perkembangan css</a>
+  						</li><li>
   							<img src="https://1.bp.blogspot.com/-As-Wa_nGgQI/YGjOZQ2IBDI/AAAAAAAACCE/a76AL-B-UUEJGOskcSKW5tUR5G3S_DpbQCNcBGAsYHQ/s16000/belajar-html-serta-sejarah-html.jpg" alt="">
   							<a href="/sejarah-html-dan-perkembangannya">Mengenal Sejarah HTML dan versinya</a>
   						</li><li>
   							<img src="https://i.ibb.co/khWF9Ff/img-post-2.jpg" alt="">
   							<a href="/post-2">Mengenal framework laravel</a>
-  						</li><li>
-  							<img src="https://i.ibb.co/DWCmBHV/login1.jpg" alt="">
-  							<a href="/post-1">Cara instal react js mantap</a>
   						</li>
 
 					</ul>
@@ -135,7 +149,7 @@ Contoh penulisan html 5 diawali dengan
 		<div class="footer-main">
 			<section class="about">
 				<h3>About</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo optio perspiciatis cupiditate quaerat, fugiat nostrum illo maiores dolore ut exercitationem ipsum hic corporis nam impedit, id, voluptatibus quae repellat iste.</p>
+				<p>staykoding merupakan blog yang membahas seputar dunia pemrograman dan pembelajaran serta tutorial pemrograman terkhususnya web development.</p>
 			</section>
 			<section class="page">
 				<ul>

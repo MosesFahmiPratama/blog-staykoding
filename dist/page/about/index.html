@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>About Me</title>
 	<link rel="stylesheet" href="../css/global.css">
-	<link rel="stylesheet" href="css/all.min.css">
 
 	<!-- load font poppins -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,16 +40,31 @@
 		</span>
 		<div class="menu">
 			<span class="close_menu">
-				<i class="fas fa-times"></i>
+				<svg viewBox="0 0 16 16" width="20" astro-icon="codicon:chrome-close"><path fill="currentColor" fill-rule="evenodd" d="m7.116 8-4.558 4.558.884.884L8 8.884l4.558 4.558.884-.884L8.884 8l4.558-4.558-.884-.884L8 7.116 3.442 2.558l-.884.884L7.116 8z" clip-rule="evenodd"/></svg>
+
 			</span>
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li><a href="/">Home</a></li>
 				<li><a href="#">Pemrograman</a></li>
 				<li><a href="#">Framework</a></li>
 				<li><a href="#">Tutorials</a></li>
 			</ul>
 		</div>
 	</nav>
+	
+<script>
+const btn_menu = document.querySelector('.btn_menu');
+const close_menu = document.querySelector('.close_menu');
+const menu = document.querySelector('.menu');
+
+btn_menu.onclick = () => {
+  menu.classList.add('active');
+}
+close_menu.onclick = () => {
+  menu.classList.remove('active');
+}
+
+</script>
 <!-- render artikel -->
 	<article class="article-post">
 		<main>
@@ -67,7 +81,7 @@
 		<div class="footer-main">
 			<section class="about">
 				<h3>About</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo optio perspiciatis cupiditate quaerat, fugiat nostrum illo maiores dolore ut exercitationem ipsum hic corporis nam impedit, id, voluptatibus quae repellat iste.</p>
+				<p>staykoding merupakan blog yang membahas seputar dunia pemrograman dan pembelajaran serta tutorial pemrograman terkhususnya web development.</p>
 			</section>
 			<section class="page">
 				<ul>
