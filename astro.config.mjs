@@ -12,4 +12,13 @@ export default defineConfig({
       external: ["svgo"],
     },
   },
+  markdownOptions: {
+    render: [
+      '@astrojs/markdown-remark',
+      {
+        // Can be 'shiki' (default), 'prism' or false to disable highlighting
+        syntaxHighlight: 'prism',
+      },
+    ],
+  },
 });
