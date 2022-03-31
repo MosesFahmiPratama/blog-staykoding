@@ -3,7 +3,7 @@ setup: |
   import Layout from '../../layouts/PageLayout.astro'
 
 title: Contact Me
-description: Ini adalah halaman contact
+description: Ini adalah halaman contact staykoding
 date: 2022-03-26
 author: "Moses Fahmi Pratama"
 ---
