@@ -50,7 +50,7 @@ const title = "StayKoding";
 			{res.map(result => (
           <div class="card-featured">
 				<div class="image-featured">
-					<img src={result.img} alt="" width="400" height="500">
+					<img src={result.img} loading="lazy" width="400" height="500">
 				</div>
 				<div class="description">
 					<h2>{result.title}</h2>
@@ -74,7 +74,7 @@ const title = "StayKoding";
 			  {page.data.map((post) => (
           <div class="card">
   					<div class="image">
-  						<img src={post.img} alt="" width="300">
+  						<img src={post.img} loading="lazy" width="300">
   						<span class="label">
   							<Icon name="ps:label" width={14}/> 
   							<span>Pemrograman</span>
@@ -82,7 +82,7 @@ const title = "StayKoding";
   					</div>
   					<div class="judul">
   						<h2><a href={post.url}>{post.title}</a></h2>
-  						<p class="author"><span><img src="https://i.ibb.co/SJv7LY0/admin-staykoding.jpg" width="40" alt=""></span>by {post.author}</p>
+  						<p class="author"><span><img src="https://i.ibb.co/SJv7LY0/admin-staykoding.jpg" width="40" loading="lazy"></span>by {post.author}</p>
   						<a class="read-more" href={post.url}>Read more</a>
   					</div>
   				</div>
