@@ -3,6 +3,14 @@ import { Icon } from 'astro-icon'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import Pagination from '../components/Paginator.astro'
 
+//get semua content pagenya
+const featuredPost = Astro.fetchContent('./*.md');
+
+//filter page yang mau dijadikan featured post dengan kondisi variabel featured bernilai true
+const res = featuredPost.filter(o => {
+  return o.featured === true;
+})
+
 export async function getStaticPaths({rss, paginate}) {
   const allPosts = Astro.fetchContent('./*.md');
   const sortedPost = allPosts.sort((a,b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
@@ -39,19 +47,22 @@ const title = "StayKoding";
 					Featured Post
 				</span>
 			</div>
-			<div class="card-featured">
+			{res.map(result => (
+          <div class="card-featured">
 				<div class="image-featured">
-					<img src="https://i.ibb.co/2ccYCCb/img-post-1.jpg" alt="" width="400" height="500">
+					<img src={result.img} alt="" width="400" height="500">
 				</div>
 				<div class="description">
-					<h2>Learn To Code</h2>
+					<h2>{result.title}</h2>
 					<span class="line"></span>
-					<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Modi suscipit minus mollitia, nam illum repellat voluptatibus provident pariatur temporibus corporis repellendus eaque.</p>
+					<p>{result.description}</p>
 					<div class="read-more">
 						<a href="#">Read More</a>
 					</div>
 				</div>
 			</div>
+			))
+			}
 		</section>
 		<section class="new-post">
 			<div class="head-post">
@@ -66,7 +77,7 @@ const title = "StayKoding";
   						<img src={post.img} alt="" width="300">
   						<span class="label">
   							<Icon name="ps:label" width={14}/> 
-  							Pemrograman
+  							<span>Pemrograman</span>
   						</span>
   					</div>
   					<div class="judul">
