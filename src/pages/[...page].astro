@@ -7,8 +7,8 @@ import Pagination from '../components/Paginator.astro'
 const featuredPost = Astro.fetchContent('./*.md');
 
 //filter page yang mau dijadikan featured post dengan kondisi variabel featured bernilai true
-const res = featuredPost.filter(o => {
-  return o.featured === true;
+const res = featuredPost.filter(cekStatus => {
+  return cekStatus.featured === true;
 })
 
 export async function getStaticPaths({rss, paginate}) {
@@ -37,9 +37,10 @@ export async function getStaticPaths({rss, paginate}) {
 
 const {page} = Astro.props;
 const title = "StayKoding";
+const description = "staykoding merupakan blog yang membahas seputar dunia pemrograman dan pembelajaran serta tutorial pemrograman terkhususnya web development.";
 ---
 
-<BaseLayout title={title}>
+<BaseLayout title={title} description={description}>
 <article class="post">
 		<section class="featured">
 			<div class="head-featured">
