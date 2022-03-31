@@ -12,6 +12,7 @@
     "astro": "^0.25.2"
   },
   "dependencies": {
+    "@astrojs/prism": "^0.4.1",
     "astro-icon": "^0.6.1"
   }
 }
