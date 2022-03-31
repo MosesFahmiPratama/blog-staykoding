@@ -3,7 +3,7 @@ setup: |
   import Layout from '../../layouts/PageLayout.astro'
 
 title: About Me
-description: Ini adalah halaman about
+description: Ini adalah halaman about staykoding
 date: 2022-03-26
 author: "Moses Fahmi Pratama"
 ---
