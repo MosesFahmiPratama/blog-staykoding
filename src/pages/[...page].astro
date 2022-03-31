@@ -32,7 +32,7 @@ export async function getStaticPaths({rss, paginate}) {
     dest: '/feed.xml',
   });
   
-  return paginate(sortedPost, {pageSize: 2});
+  return paginate(sortedPost, {pageSize: 4});
 }
 
 const {page} = Astro.props;
@@ -51,7 +51,7 @@ const description = "staykoding merupakan blog yang membahas seputar dunia pemro
 			{res.map(result => (
           <div class="card-featured">
 				<div class="image-featured">
-					<img src={result.img} loading="lazy" width="400" height="500">
+					<img src={result.img} alt={result.title} loading="lazy" width="400" height="500">
 				</div>
 				<div class="description">
 					<h2>{result.title}</h2>
@@ -75,7 +75,7 @@ const description = "staykoding merupakan blog yang membahas seputar dunia pemro
 			  {page.data.map((post) => (
           <div class="card">
   					<div class="image">
-  						<img src={post.img} loading="lazy" width="300">
+  						<img src={post.img} alt={post.title} loading="lazy" width="300">
   						<span class="label">
   							<Icon name="ps:label" width={14}/> 
   							<span>Pemrograman</span>
