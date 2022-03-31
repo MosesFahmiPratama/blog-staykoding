@@ -13,7 +13,7 @@ import BaseLayout from './BaseLayout.astro'
 const {content} = Astro.props;
 ---
 	
-<BaseLayout title={content.title}>
+<BaseLayout title={content.title} description={content.description} author={content.author}>
   <article class="article-post">
 		<main>
 			<div class="title-post">

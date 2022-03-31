@@ -7,6 +7,7 @@ description: Ini adalah halaman contact
 date: 2022-03-28
 author: "Moses Fahmi Pratama"
 img: "https://1.bp.blogspot.com/-As-Wa_nGgQI/YGjOZQ2IBDI/AAAAAAAACCE/a76AL-B-UUEJGOskcSKW5tUR5G3S_DpbQCNcBGAsYHQ/s16000/belajar-html-serta-sejarah-html.jpg"
+featured: true
 ---
 
 Hallo para staykoder semuanya, pada artikel pertama staykoding kali ini kita akan membahas mengenai sebuah bahasa dokumen yang dinamakan HTML, untuk para staykoder(sebutan khusus untuk para pembaca artikel staykoding yaa) yang belum tahu serta belum mengenal HTML itu apa sih dan ada apa memangnya dengan HTML eaakk.
