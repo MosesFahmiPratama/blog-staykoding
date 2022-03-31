@@ -42,7 +42,9 @@ HTML 1.0 merupakan generasi pertama dari pada dokumen html. Html 1.0 inilah yang
 
 Contoh penulisan html 1.0 diawali dengan <html> 
 
-    <html> 
+```html
+<html> 
+```
 
 ### 2. HTML Versi 2.0
 
@@ -50,7 +52,9 @@ HTML 2.0 merupakan hasil pengembangan dari versi sebelumnya yaitu 1.0 , pada ver
 
 Contoh penulisan html 2.0 diawali dengan <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> sebelum tag <html>
 
-    <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"><html>
+```html
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"><html>
+```
 
 ### 3. HTML Versi 3.0
 
