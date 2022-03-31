@@ -1,7 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
-  --mainColor: #1cbfc3;
+  --bg-color-1: #1cbfc3;
+  --bg-color-2: #0d9ad0;
+  --main-color-1: #f7fdfd;
+  --main-color-2: #ffffff;
+  --text-1: #ffffff;
+  --text-2: #4D4D4D;
+  --text-3: #444444;
+  --shadow-box: #D2D1D1;
+}
+
+.dark {
+  --bg-color-1: #494A4A;
+  --bg-color-2: #515151;
+  --main-color-1: #444444;
+  --main-color-2: rgb(94,94,94);
+  --text-1: #ffffff;
+  --text-2: #4D4D4D;
+  --text-3: #D0D0D0;
+  --shadow-box: #D2D1D1;
 }
 
 * {
@@ -12,7 +30,7 @@
 }
 
 header {
-  background-color: white;
+  background-color: var(--main-color-2);
   width: 100%;
   height: 120px;
   display: flex;
@@ -41,25 +59,20 @@ header .social-media ul li {
   font-size: 1.5em;
 }
 header .social-media ul li svg {
-  color: var(--mainColor);
+  color: var(--bg-color-1);
 }
 header .logo {
   margin-left: -3%;
 }
-@media (max-width: 768px) {
-  header .logo img {
-    width: 250px;
-  }
 header .more-menu button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   font-size: 1.4em;
-  background-color: var(--mainColor);
-  color: white;
+  background-color: var(--bg-color-1);
+  color: var(--main-color-2);
   border: none;
   cursor: pointer;
-}
 }
 @media (max-width: 768px) {
   header .more-menu button {
@@ -68,7 +81,7 @@ header .more-menu button {
   }
 }
 header .more-menu button:hover {
-  box-shadow: 2px 2px 3px #D2D1D1;
+  box-shadow: 2px 2px 3px var(--shadow-box);
 }
 
 nav {
@@ -77,7 +90,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom right, var(--mainColor), #0d9ad0);
+  background-image: linear-gradient(to bottom right, var(--bg-color-1), var(--bg-color-2));
 }
 nav .btn_menu {
   display: none;
@@ -95,7 +108,7 @@ nav .btn_menu {
   nav .btn_menu span {
     width: 20px;
     height: 3px;
-    background: white;
+    background: var(--main-color-2);
   }
 }
 @media (max-width: 768px) {
@@ -106,7 +119,7 @@ nav .btn_menu {
     height: 100vh;
     width: 60%;
     z-index: 999;
-    background: var(--mainColor);
+    background: var(--bg-color-1);
     flex-direction: column;
     transition: all 1.5s;
   }
@@ -132,7 +145,7 @@ nav .menu .close_menu {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: white;
+    color: var(--text-1);
   }
 }
 nav .menu ul {
@@ -155,7 +168,7 @@ nav .menu ul li {
 }
 nav .menu ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--text-1);
   font-weight: 500;
 }
 
@@ -164,12 +177,12 @@ nav .menu ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f7fdfd;
+  background: var(--main-color-1);
 }
 .post .featured {
   width: 80%;
   margin-top: 20px;
-  background: #f7fdfd;
+  background: var(--main-color-1);
 }
 @media (max-width: 768px) {
   .post .featured {
@@ -182,13 +195,13 @@ nav .menu ul li a {
 .post .featured .head-featured .head-featured__title {
   font-size: 1.2em;
   font-weight: 500;
-  border-bottom: 2px solid var(--mainColor);
+  border-bottom: 2px solid var(--bg-color-1);
 }
 .post .featured .card-featured {
   width: 100%;
   height: 250px;
-  background: white;
-  box-shadow: 1px 3px 4px #D2D1D1;
+  background: var(--main-color-2);
+  box-shadow: 1px 3px 4px var(--shadow-box);
   margin-bottom: 20px;
   display: flex;
   overflow: hidden;
@@ -238,7 +251,7 @@ nav .menu ul li a {
 .post .featured .card-featured .description {
   flex: 2;
   padding: 20px;
-  background: white;
+  background: var(--main-color-2);
   height: 200px;
   width: 90%;
 }
@@ -264,7 +277,7 @@ nav .menu ul li a {
   width: 80px;
   height: 8px;
   border-radius: 10px;
-  background: var(--mainColor);
+  background: var(--bg-color-1);
 }
 @media (max-width: 768px) {
   .post .featured .card-featured .description .line {
@@ -274,7 +287,7 @@ nav .menu ul li a {
 }
 .post .featured .card-featured .description p {
   margin-top: 20px;
-  color: #A2A2A2;
+  color: var(--text-3);
 }
 @media (max-width: 768px) {
   .post .featured .card-featured .description p {
@@ -291,16 +304,16 @@ nav .menu ul li a {
 @media (max-width: 768px) {
   .post .featured .card-featured .description .read-more {
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     right: 5px;
   }
 }
 .post .featured .card-featured .description .read-more a {
   justify-content: flex-end;
   padding: 5px 10px;
-  border: 2px solid var(--mainColor);
+  border: 2px solid var(--bg-color-1);
   border-radius: 20px;
-  color: var(--mainColor);
+  color: var(--bg-color-1);
   text-decoration: none;
   font-size: 0.9em;
 }
@@ -310,8 +323,8 @@ nav .menu ul li a {
   }
 }
 .post .featured .card-featured .description .read-more a:hover {
-  background: var(--mainColor);
-  color: white;
+  background: var(--bg-color-1);
+  color: var(--text-1);
 }
 .post .new-post {
   width: 90%;
@@ -330,7 +343,7 @@ nav .menu ul li a {
 }
 .post .new-post .head-post .head-post__title {
   font-weight: 500;
-  border-bottom: 2px solid var(--mainColor);
+  border-bottom: 2px solid var(--bg-color-1);
 }
 .post .new-post .card-container {
   display: flex;
@@ -339,11 +352,11 @@ nav .menu ul li a {
   width: 100%;
 }
 .post .new-post .card-container .card {
-  background: white;
+  background: var(--main-color-2);
   width: 300px;
   height: 320px;
   border-radius: 7px;
-  box-shadow: 1px 3px 4px #D2D1D1;
+  box-shadow: 1px 3px 4px var(--shadow-box);
   margin: 20px;
   position: relative;
 }
@@ -376,19 +389,14 @@ nav .menu ul li a {
   }
 }
 .post .new-post .card-container .card .image .label {
-  display: flex;
-  align-items: center;
   position: absolute;
   top: 10px;
   left: 10px;
-  color: white;
+  color: var(--text-1);
   text-shadow: 1px 2px 2px #C4C4C4;
-  background: var(--mainColor);
+  background: var(--bg-color-1);
   padding: 5px 10px;
   border-radius: 10px;
-}
-.post .new-post .card-container .card .image .label span {
-  margin-left: 10px;
 }
 .post .new-post .card-container .card .judul {
   padding: 0 10px;
@@ -403,14 +411,14 @@ nav .menu ul li a {
 }
 .post .new-post .card-container .card .judul h2 a {
   text-decoration: none;
-  color: #4D4D4D;
+  color: var(--text-2);
 }
 .post .new-post .card-container .card .judul .author {
   position: absolute;
   bottom: 5px;
   left: 10px;
   font-size: 0.8em;
-  color: #D2D1D1;
+  color: var(--text-3);
   display: flex;
   align-items: center;
 }
@@ -420,7 +428,7 @@ nav .menu ul li a {
   }
 }
 .post .new-post .card-container .card .judul .read-more {
-  color: var(--mainColor);
+  color: var(--bg-color-1);
   text-decoration: none;
   position: absolute;
   right: 10px;
@@ -437,39 +445,38 @@ nav .menu ul li a {
   width: 100%;
   justify-content: center;
   font-size: 1.5em;
+  color: var(--text-1);
 }
 .post .new-post .navigation .prev {
   padding: 2px 10px;
   border-radius: 10px;
-  background: var(--mainColor);
-  color: white;
-  text-decoration: none;
-  font-size: .7em;
+  background: var(--bg-color-1);
   cursor: pointer;
+  text-decoration: none;
+  color: var(--text-1);
 }
 .post .new-post .navigation .prev:hover {
-  border: 2px solid var(--mainColor);
-  background: white;
-  color: var(--mainColor);
+  border: 2px solid var(--bg-color-1);
+  background: var(--main-color-2);
+  color: var(--bg-color-1);
 }
 .post .new-post .navigation .next {
   padding: 2px 10px;
   border-radius: 10px;
-  background: var(--mainColor);
+  background: var(--bg-color-1);
   cursor: pointer;
-  color: white;
-  text-decoration: none;
-  font-size: .7em;
   margin-left: 10px;
+  text-decoration: none;
+  color: var(--text-1);
 }
 .post .new-post .navigation .next:hover {
-  border: 2px solid var(--mainColor);
-  background: white;
-  color: var(--mainColor);
+  border: 2px solid var(--bg-color-1);
+  background: var(--main-color-2);
+  color: var(--bg-color-1);
 }
 
 footer {
-  background: white;
+  background: var(--main-color-2);
   height: 300px;
   width: 100%;
   border-top-left-radius: 20px;
@@ -505,7 +512,7 @@ footer .footer-main .page ul li {
 }
 footer .footer-main .page ul li a {
   text-decoration: none;
-  color: var(--mainColor);
+  color: var(--bg-color-1);
   font-weight: 500;
 }
 footer .copyright {
@@ -527,7 +534,7 @@ footer .copyright {
 .article-post {
   display: flex;
   justify-content: space-around;
-  background: #f7fdfd;
+  background: var(--main-color-1);
 }
 @media (max-width: 768px) {
   .article-post {
@@ -540,46 +547,52 @@ footer .copyright {
   height: auto;
   margin: 15px;
   padding: 15px;
-  background: white;
+  background: var(--main-color-2);
   flex: 2;
 }
 .article-post main .title-post {
   text-align: center;
   margin-bottom: 20px;
-  width: auto;
-  height: 70px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 .article-post main .title-post:before {
   content: "";
   position: absolute;
-  left: 45%;
   border-radius: 15px;
-  bottom: 0;
+  bottom: -20px;
   width: 100px;
   height: 10px;
   background: #EEEEEE;
 }
 @media (max-width: 768px) {
   .article-post main .title-post:before {
-    left: 35%;
     height: 5px;
   }
 }
-.article-post main p {
+.article-post main .body-post {
+  margin-top: 50px;
+}
+.article-post main .body-post p {
   margin: 10px 0;
+  line-height: 1.7;
+  color: var(--text-3);
   font-family: "Roboto", sans-serif;
 }
 @media (max-width: 768px) {
-  .article-post main p {
-    font-size: 1em;
+  .article-post main .body-post p {
+    font-size: 0.9em;
   }
 }
-.article-post main img {
+.article-post main .body-post img {
   width: 50%;
 }
 @media (max-width: 768px) {
-  .article-post main img {
+  .article-post main .body-post img {
     width: 100%;
   }
 }
@@ -594,7 +607,7 @@ footer .copyright {
   }
 }
 .article-post aside .widget {
-  background: white;
+  background: var(--main-color-2);
   padding: 15px;
 }
 .article-post aside .widget .title-widget {
@@ -615,12 +628,12 @@ footer .copyright {
 .article-post aside .widget .list-post ul li a {
   margin-left: 15px;
   text-decoration: none;
-  color: #555454;
+  color: var(--text-2);
   font-size: 0.9em;
   font-weight: 600;
 }
 .article-post aside .widget .list-post ul li a:hover {
-  color: var(--mainColor);
+  color: var(--bg-color-1);
 }
 
 /*# sourceMappingURL=style.css.map */
