@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
+:root {
+  --mainColor: #1cbfc3;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +41,7 @@ header .social-media ul li {
   font-size: 1.5em;
 }
 header .social-media ul li svg {
-  color: #1cbfc3;
+  color: var(--mainColor);
 }
 header .logo {
   margin-left: -3%;
@@ -51,10 +55,11 @@ header .more-menu button {
   height: 50px;
   border-radius: 50%;
   font-size: 1.4em;
-  background-color: #1cbfc3;
+  background-color: var(--mainColor);
   color: white;
   border: none;
   cursor: pointer;
+}
 }
 @media (max-width: 768px) {
   header .more-menu button {
@@ -72,7 +77,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom right, #1cbfc3, #0d9ad0);
+  background-image: linear-gradient(to bottom right, var(--mainColor), #0d9ad0);
 }
 nav .btn_menu {
   display: none;
@@ -101,7 +106,7 @@ nav .btn_menu {
     height: 100vh;
     width: 60%;
     z-index: 999;
-    background: #1cbfc3;
+    background: var(--mainColor);
     flex-direction: column;
     transition: all 1.5s;
   }
@@ -177,7 +182,7 @@ nav .menu ul li a {
 .post .featured .head-featured .head-featured__title {
   font-size: 1.2em;
   font-weight: 500;
-  border-bottom: 2px solid #1cbfc3;
+  border-bottom: 2px solid var(--mainColor);
 }
 .post .featured .card-featured {
   width: 100%;
@@ -259,7 +264,7 @@ nav .menu ul li a {
   width: 80px;
   height: 8px;
   border-radius: 10px;
-  background: #1cbfc3;
+  background: var(--mainColor);
 }
 @media (max-width: 768px) {
   .post .featured .card-featured .description .line {
@@ -293,9 +298,9 @@ nav .menu ul li a {
 .post .featured .card-featured .description .read-more a {
   justify-content: flex-end;
   padding: 5px 10px;
-  border: 2px solid #1cbfc3;
+  border: 2px solid var(--mainColor);
   border-radius: 20px;
-  color: #1cbfc3;
+  color: var(--mainColor);
   text-decoration: none;
   font-size: 0.9em;
 }
@@ -305,7 +310,7 @@ nav .menu ul li a {
   }
 }
 .post .featured .card-featured .description .read-more a:hover {
-  background: #1cbfc3;
+  background: var(--mainColor);
   color: white;
 }
 .post .new-post {
@@ -325,7 +330,7 @@ nav .menu ul li a {
 }
 .post .new-post .head-post .head-post__title {
   font-weight: 500;
-  border-bottom: 2px solid #1cbfc3;
+  border-bottom: 2px solid var(--mainColor);
 }
 .post .new-post .card-container {
   display: flex;
@@ -378,7 +383,7 @@ nav .menu ul li a {
   left: 10px;
   color: white;
   text-shadow: 1px 2px 2px #C4C4C4;
-  background: #1cbfc3;
+  background: var(--mainColor);
   padding: 5px 10px;
   border-radius: 10px;
 }
@@ -415,7 +420,7 @@ nav .menu ul li a {
   }
 }
 .post .new-post .card-container .card .judul .read-more {
-  color: #1cbfc3;
+  color: var(--mainColor);
   text-decoration: none;
   position: absolute;
   right: 10px;
@@ -436,21 +441,21 @@ nav .menu ul li a {
 .post .new-post .navigation .prev {
   padding: 2px 10px;
   border-radius: 10px;
-  background: #1cbfc3;
+  background: var(--mainColor);
   color: white;
   text-decoration: none;
   font-size: .7em;
   cursor: pointer;
 }
 .post .new-post .navigation .prev:hover {
-  border: 2px solid #1cbfc3;
+  border: 2px solid var(--mainColor);
   background: white;
-  color: #1cbfc3;
+  color: var(--mainColor);
 }
 .post .new-post .navigation .next {
   padding: 2px 10px;
   border-radius: 10px;
-  background: #1cbfc3;
+  background: var(--mainColor);
   cursor: pointer;
   color: white;
   text-decoration: none;
@@ -458,9 +463,9 @@ nav .menu ul li a {
   margin-left: 10px;
 }
 .post .new-post .navigation .next:hover {
-  border: 2px solid #1cbfc3;
+  border: 2px solid var(--mainColor);
   background: white;
-  color: #1cbfc3;
+  color: var(--mainColor);
 }
 
 footer {
@@ -500,7 +505,7 @@ footer .footer-main .page ul li {
 }
 footer .footer-main .page ul li a {
   text-decoration: none;
-  color: #1cbfc3;
+  color: var(--mainColor);
   font-weight: 500;
 }
 footer .copyright {
@@ -615,7 +620,7 @@ footer .copyright {
   font-weight: 600;
 }
 .article-post aside .widget .list-post ul li a:hover {
-  color: #1cbfc3;
+  color: var(--mainColor);
 }
 
 /*# sourceMappingURL=style.css.map */
