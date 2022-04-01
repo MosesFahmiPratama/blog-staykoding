@@ -8,6 +8,8 @@ date: 2022-03-28
 author: "Moses Fahmi Pratama"
 img: "https://1.bp.blogspot.com/-As-Wa_nGgQI/YGjOZQ2IBDI/AAAAAAAACCE/a76AL-B-UUEJGOskcSKW5tUR5G3S_DpbQCNcBGAsYHQ/s16000/belajar-html-serta-sejarah-html.jpg"
 featured: true
+categories: 
+  - HTML
 ---
 
 Hallo para staykoder semuanya, pada artikel pertama staykoding kali ini kita akan membahas mengenai sebuah bahasa dokumen yang dinamakan HTML, untuk para staykoder(sebutan khusus untuk para pembaca artikel staykoding yaa) yang belum tahu serta belum mengenal HTML itu apa sih dan ada apa memangnya dengan HTML eaakk.
@@ -53,7 +55,8 @@ HTML 2.0 merupakan hasil pengembangan dari versi sebelumnya yaitu 1.0 , pada ver
 Contoh penulisan html 2.0 diawali dengan <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> sebelum tag <html>
 
 ```html
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"><html>
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
 ```
 
 ### 3. HTML Versi 3.0
@@ -62,7 +65,10 @@ HTML 3.0 merupakan kelanjutan dari versi 2.0 yang saat itu juga telah ditambahka
 
 Contoh penulisan html 3.0 diawali dengan <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN"> sebelum tag <html>
 
-    <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN"><html>
+```html
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
+<html>
+```
 
 ### 4. HTML Versi 3.2
 
@@ -70,7 +76,10 @@ Setelah berakhirnya html 3.0 , html versi 3.2 akhirnya di luncurkan yaitu pada t
 
 Contoh penulisan html 3.2 diawali dengan <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"> sebelum tag <html>
 
-    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"> <html>
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+```
 
 ### 5. HTML Versi 4.01
 
@@ -78,15 +87,21 @@ Sebelum HTML Versi 4.01 keluar, HTML Versi 4.0 yang lebih dulu ada. HTML 4.0 dil
 
 Contoh penulisan html 4.01 diawali dengan <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> sebelum tag <html>
 
-    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> <html>
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+```
 
 ### 6. XHTML 1.0
 
 XHTML merupakan kependekan dari The Extensible HyperText Markup Language yaitu gabungan dari bahasa HTML dan XML. XML yaitu EXtensible Markup Language berbeda dengan HTML, XML memiliki fungsi untuk mengirim,menyimpan dan membawa data artinya tidak digunakan dalam hal tampilan website. XHTML diluncurkan pertama kali pada tanggal 26 januari 2000 oleh W3C pengembang dari HTML.
 
-Contoh penulisan xhtml 1.0 diawali dengan <?xml version="1.0" encoding="UTF-8"?> kemudian diikuti dengan <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> sebelum tag <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Contoh penulisan xhtml 1.0 diawali dengan <?xml version="1.0" encoding="UTF-8"?> kemudian diikuti dengan <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> sebelum tag <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">.
 
-    <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+```html
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+```
 
 ### 7. HTML 5
 
@@ -94,9 +109,10 @@ HTML 5 hadir dari adanya kerja sama antara W3C dengan sebuah kelompok yang dinam
 
 Contoh penulisan html 5 diawali dengan <!DOCTYPE html> sebelum tag <html>
 
-    
-    <!DOCTYPE html>
-    <html>
+```html
+<!DOCTYPE html>
+<html>
+```
 
 Menurut admin sendiri html 5 ini lebih simpel penulisan tag pembukanya dibanding versi-versi sebelumnya serta terdapat banyak tambahan tag baru diantaranya
 

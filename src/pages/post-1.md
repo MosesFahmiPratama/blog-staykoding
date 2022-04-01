@@ -7,6 +7,8 @@ description: Ini adalah contoh Blog
 date: 2022-03-26
 author: "Moses Fahmi Pratama"
 img: "https://i.ibb.co/DWCmBHV/login1.jpg"
+categories: 
+  - Tips
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero harum, magnam optio aut iste, reiciendis, dolore ad nesciunt ducimus natus, asperiores temporibus quia et assumenda deserunt aperiam aliquid exercitationem pariatur.

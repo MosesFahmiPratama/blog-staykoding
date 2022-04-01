@@ -7,6 +7,8 @@ description: sejarah css berikut ternyata css lahir karena untuk mengatasi muncu
 date: 2022-03-31
 author: "Moses Fahmi Pratama"
 img: "https://1.bp.blogspot.com/-PK52xcFIGlw/YGtcdYM8TrI/AAAAAAAACCM/FzeOcRQwRJgsFNb3qUkfNAlTJd6-eYbvwCNcBGAsYHQ/s1280/sejarah-perkembangan-css.jpg"
+categories: 
+  - CSS
 ---
 
 mengenal sejarah css serta kegunaan dan perkembangan versinya perlu staykoder ketahui untuk menambah wawasan dan pengetahuan sehingga dapat membuat kita tidak hanya tahu soal menulis setiap baris dari kode css akan tetapi tahu sejarah css dan kegunaan serta perkembangan css itu sendiri. Berikut ini akan dijelaskan oleh admin mengenai sejarah css.
