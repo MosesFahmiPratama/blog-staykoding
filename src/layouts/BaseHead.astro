@@ -1,0 +1,12 @@
+---
+import '../styles/global.css';
+import '../styles/prismjs.css';
+let {title,description,author} = Astro.props;
+---
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{title}</title>
+	<meta name="description" content={description} />
+	<meta name="author" content={author} />
+
