@@ -678,5 +678,20 @@ footer .copyright {
 .article-post aside .widget .list-post ul li a:hover {
   color: var(--bg-color-1);
 }
-
-/*# sourceMappingURL=style.css.map */
+.article-post main p {
+  font-size: 0.9em;
+  font-family: 'Roboto', Sans-Serif;
+  line-height: 1.7;
+}
+.article-post main img {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .article-post main img {
+    width: 100%;
+  }
+}
+.article-post main a {
+  text-decoration: none;
+  color: var(--bg-color-1);
+}
