@@ -1,7 +1,8 @@
 ---
+import {Icon} from 'astro-icon'
 const { page } = Astro.props;
 ---
 <div class="navigation">
-  {page.url.prev && <a class="prev" href={page.url.prev} title="go to previues">&larr; prev</a>}
-  {page.url.next && <a class="next" href={page.url.next} title="go to next">next &rarr;</a>}
+  {page.url.prev && <a class="prev" href={page.url.prev} title="go to previues"><Icon name="bi:arrow-left-square" width={25} />&nbsp; prev</a>}
+  {page.url.next && <a class="next" href={page.url.next} title="go to next"><Icon name="bi:arrow-right-square" width={25} />&nbsp;next</a>}
 </div>
