@@ -12,7 +12,7 @@
   --text-li-nav: #ffffff;
   --text-link: #1cbfc3;
   --text-label: #ffffff;
-  --text-button: #444444;
+  --text-button: #fefefe;
   --button-nav: #1cbfc3;
   --label: #444444;
   --shadow-box: #D2D1D1;
@@ -31,7 +31,7 @@
   --text-li-nav: #D0D0D0;
   --text-link: #D0D0D0;
   --text-label: #D0D0D0;
-  --text-button: #D0D0D0;
+  --text-button: #ffffff;
   --button-nav: #101010;
   --label: #D0D0D0;
   --shadow-box: #D2D1D1;
@@ -168,6 +168,9 @@ nav .menu ul li a {
 }
 .post .featured .card-featured .description h2 {
   font-size: 2em;
+}
+.post .featured .card-featured .description h2 a {
+  text-decoration: none;
   color: var(--text-head);
 }
 .post .featured .card-featured .description .line {
@@ -293,35 +296,39 @@ nav .menu ul li a {
   display: flex;
   width: 100%;
   justify-content: center;
-  font-size: 1.5em;
   color: var(--text-button);
+  font-size: 1.5em;
 }
 .post .new-post .navigation .prev {
-  padding: 2px 10px;
+  padding: 10px;
   border-radius: 10px;
   background: var(--button-nav);
   cursor: pointer;
   text-decoration: none;
   color: var(--text-nav);
+  display: flex;
+  align-items: center;
 }
 .post .new-post .navigation .prev:hover {
   border: 2px solid var(--bg-color-1);
   background: var(--main-color-2);
-  color: var(--text-nav);
+  color: #1cbfc3;
 }
 .post .new-post .navigation .next {
-  padding: 2px 10px;
+  padding: 10px;
   border-radius: 10px;
   background: var(--button-nav);
   cursor: pointer;
   margin-left: 10px;
   text-decoration: none;
   color: var(--text-nav);
+  display: flex;
+  align-items: center;
 }
 .post .new-post .navigation .next:hover {
   border: 2px solid var(--bg-color-1);
   background: var(--main-color-2);
-  color: var(--text-nav);
+  color: #1cbfc3;
 }
 
 footer {
@@ -616,6 +623,9 @@ footer .copyright {
   }
   .post .new-post .card-container .card .judul .read-more {
     color: var(--text-p);
+  }
+  .post .new-post .navigation {
+    font-size: 1em;
   }
 
   footer {
