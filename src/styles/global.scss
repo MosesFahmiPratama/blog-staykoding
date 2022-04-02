@@ -2,6 +2,7 @@ $color_1: var(--bg-color-1);
 $color_2: var(--main-color-2);
 $text_head: var(--text-head);
 $text_p: var(--text-p);
+$card_text_p: var(--card-text-p);
 $text_nav: var(--text-nav);
 $text_li_footer: var(--text-li-footer);
 $text_li_nav: var(--text-li-nav);
@@ -25,6 +26,7 @@ $background-color_2: var(--bg-color-1);
 	--main-color-2: #ffffff;
 	--text-head: #444444;
 	--text-p: #444444;
+	--card-text-p: #1cbfc3;
 	--text-li-footer: #1cbfc3;
 	--line-head: #1cbfc3;
 	--text-nav: #ffffff;
@@ -43,6 +45,7 @@ $background-color_2: var(--bg-color-1);
 	--main-color-2: #101010;
 	--text-head: #D0D0D0;
 	--text-p: #D0D0D0;
+	--card-text-p: #D0D0D0;
 	--text-li-footer: #D0D0D0;
 	--line-head: #D0D0D0;
 	--text-nav: #ffffff;
@@ -208,7 +211,7 @@ nav {
 						padding: 5px 10px;
 						border: 2px solid var(--bg-color-1);
 						border-radius: 20px;
-						color: $color_1;
+						color: $card_text_p;
 						text-decoration: none;
 						font-size: 0.9em;
 						font-weight: bold;
@@ -271,7 +274,7 @@ nav {
 						padding: 5px 10px;
 						border-radius: 10px;
 						span {
-							margin-left: 10px;
+							margin-left: 5px;
 						}
 					}
 				}
@@ -305,7 +308,7 @@ nav {
 						position: absolute;
 						right: 10px;
 						bottom: 18px;
-						font-size: 0.8em;
+						font-size: 0.5em;
 					}
 				}
 			}
@@ -429,6 +432,7 @@ footer {
 			p {
 				margin: 10px 0;
 				line-height: 1.7;
+				font-size: 1.2em;
 				color: $text_p;
 				font-family: $font-family_2;
 			}
@@ -457,7 +461,6 @@ footer {
 			}
 		}
 		p {
-			font-size: 0.9em;
 			font-family: $font-family_3;
 			line-height: 1.7;
 		}
@@ -551,7 +554,7 @@ footer {
 			z-index: 999;
 			background: var(--bg-color-1);
 			flex-direction: column;
-			transition: all 1.5s;
+			transition: all 1s;
 			.close_menu {
 				display: block;
 				position: absolute;
@@ -650,7 +653,7 @@ footer {
 							color: $text_head;
 						}
 						.read-more {
-						  color: $text_p;
+						  color: $card_text_p;
 						}
 					}
 				}
@@ -696,6 +699,7 @@ footer {
 		flex-direction: column;
 		align-items: center;
 		main {
+		  width: 95%;
 			.title-post {
 				&:before {
 					height: 5px;
@@ -703,7 +707,7 @@ footer {
 			}
 			.body-post {
 				p {
-					font-size: 0.9em;
+					font-size: 1em;
 				}
 				pre {
 					code {
@@ -720,6 +724,7 @@ footer {
 		}
 		aside {
 			margin-left: 15px;
+			width: 95%;
 		}
 	}
 }

@@ -6,6 +6,7 @@
   --main-color-2: #ffffff;
   --text-head: #444444;
   --text-p: #444444;
+  --card-text-p: #1cbfc3;
   --text-li-footer: #1cbfc3;
   --line-head: #1cbfc3;
   --text-nav: #ffffff;
@@ -25,6 +26,7 @@
   --main-color-2: #101010;
   --text-head: #D0D0D0;
   --text-p: #D0D0D0;
+  --card-text-p: #D0D0D0;
   --text-li-footer: #D0D0D0;
   --line-head: #D0D0D0;
   --text-nav: #ffffff;
@@ -195,7 +197,7 @@ nav .menu ul li a {
   padding: 5px 10px;
   border: 2px solid var(--bg-color-1);
   border-radius: 20px;
-  color: var(--bg-color-1);
+  color: var(--card-text-p);
   text-decoration: none;
   font-size: 0.9em;
   font-weight: bold;
@@ -259,7 +261,7 @@ nav .menu ul li a {
   border-radius: 10px;
 }
 .post .new-post .card-container .card .image .label span {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 .post .new-post .card-container .card .judul {
   padding: 0 10px;
@@ -290,7 +292,7 @@ nav .menu ul li a {
   position: absolute;
   right: 10px;
   bottom: 18px;
-  font-size: 0.8em;
+  font-size: 0.5em;
 }
 .post .new-post .navigation {
   display: flex;
@@ -412,6 +414,7 @@ footer .copyright {
 .article-post main .body-post p {
   margin: 10px 0;
   line-height: 1.7;
+  font-size: 1.2em;
   color: var(--text-p);
   font-family: "Roboto", sans-serif;
 }
@@ -439,7 +442,6 @@ footer .copyright {
   width: 50%;
 }
 .article-post main p {
-  font-size: 0.9em;
   font-family: "Roboto", Sans-Serif;
   line-height: 1.7;
 }
@@ -524,7 +526,7 @@ footer .copyright {
     z-index: 999;
     background: var(--bg-color-1);
     flex-direction: column;
-    transition: all 1.5s;
+    transition: all 1s;
   }
   nav .menu .close_menu {
     display: block;
@@ -622,7 +624,7 @@ footer .copyright {
     color: var(--text-head);
   }
   .post .new-post .card-container .card .judul .read-more {
-    color: var(--text-p);
+    color: var(--card-text-p);
   }
   .post .new-post .navigation {
     font-size: 1em;
@@ -659,11 +661,14 @@ footer .copyright {
     flex-direction: column;
     align-items: center;
   }
+  .article-post main {
+    width: 95%;
+  }
   .article-post main .title-post:before {
     height: 5px;
   }
   .article-post main .body-post p {
-    font-size: 0.9em;
+    font-size: 1em;
   }
   .article-post main .body-post pre code {
     font-size: 0.7em;
@@ -676,6 +681,7 @@ footer .copyright {
   }
   .article-post aside {
     margin-left: 15px;
+    width: 95%;
   }
 }
 @media (max-width: 420px) {
