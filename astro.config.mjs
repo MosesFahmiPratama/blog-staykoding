@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
     buildOptions: {
     // site: 'http://example.com',           // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
-    site: 'https://staykoding.com',
+    site: 'https://staykoding.pages.dev',
     sitemap: true,         // Generate sitemap (set to "false" to disable)
   },
   vite: {
