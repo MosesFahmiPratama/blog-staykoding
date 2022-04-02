@@ -3,7 +3,7 @@ setup: |
   import Layout from '../layouts/PostLayout.astro'
 
 title: Mengenal Sejarah HTML dan versinya
-description: Ini adalah halaman contact
+description: Berikut sejarah HTML yang dapat menjadi referensi kamu untuk belajar lebih dalam lagi tentang html.
 date: 2022-03-28
 author: "Moses Fahmi Pratama"
 img: "https://1.bp.blogspot.com/-As-Wa_nGgQI/YGjOZQ2IBDI/AAAAAAAACCE/a76AL-B-UUEJGOskcSKW5tUR5G3S_DpbQCNcBGAsYHQ/s16000/belajar-html-serta-sejarah-html.jpg"
