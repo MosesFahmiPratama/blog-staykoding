@@ -42,7 +42,7 @@ Sejarah Versi Dari HTML
 
 HTML 1.0 merupakan generasi pertama dari pada dokumen html. Html 1.0 inilah yang resmi di luncurkan pada tahun 1991. Pada versi pertama ini sedikit orang yang menggunakannya pada waktu itu, dikarenakan kurangnya fitur dan sintaks atau tag yang masih belum memadai(terbatas).
 
-Contoh penulisan html 1.0 diawali dengan <html> 
+<p>Contoh penulisan html 1.0 diawali dengan <html> </p>
 
 ```html
 <html> 
@@ -52,7 +52,7 @@ Contoh penulisan html 1.0 diawali dengan <html> 
 
 HTML 2.0 merupakan hasil pengembangan dari versi sebelumnya yaitu 1.0 , pada versi ini telah ditambahkan tag-tag baru saat itu dan digunakan sampai akhir tahun 1997.
 
-Contoh penulisan html 2.0 diawali dengan <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> sebelum tag <html>
+<p>Contoh penulisan html 2.0 diawali dengan <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> sebelum tag <html></p>
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
@@ -63,7 +63,7 @@ Contoh penulisan html 2.0 diawali dengan <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTM
 
 HTML 3.0 merupakan kelanjutan dari versi 2.0 yang saat itu juga telah ditambahkan fitur tambahan seperti _tables, math_ dan _text flow_. Sayangnya versi ini cepat ditinggalkan karena memberlakukan hal baru pada browser sementara perkembangan browser saat itu belum signifikan.
 
-Contoh penulisan html 3.0 diawali dengan <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN"> sebelum tag <html>
+<p>Contoh penulisan html 3.0</p>
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN">
@@ -74,7 +74,7 @@ Contoh penulisan html 3.0 diawali dengan <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTM
 
 Setelah berakhirnya html 3.0 , html versi 3.2 akhirnya di luncurkan yaitu pada tahun 1997 bulan januari tanggal 14. Html versi 3.2 ini saat itu malah direkomendasikan oleh organisasi W3C saat itu karena dinilai kompatibel(dapat bekerja) pada banyak beragam browser waktu itu. serta HTMl 3.2 dijadikan standar resmi html dalam membuat halaman web.
 
-Contoh penulisan html 3.2 diawali dengan <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"> sebelum tag <html>
+Contoh penulisan html 3.2
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
@@ -85,7 +85,7 @@ Contoh penulisan html 3.2 diawali dengan <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
 
 Sebelum HTML Versi 4.01 keluar, HTML Versi 4.0 yang lebih dulu ada. HTML 4.0 diluncurkan pada tahun 1997 tepatnya dibulan desember. HTML 4.0 ini mengalami perubahan besar karena sudah ada yang namanya CSS (Cascading Stylesheet) yaitu kode berbentuk skrip yang berguna untuk mempercantik dan mendesain tampilan halaman website. Akan tetapi pada tahun 1998 HTML dikembangkan lagi dan lahirlah HTML 4.01 yang merupakan perbaikan dari HTML 4.0 yaitu versi  sebelumnya.
 
-Contoh penulisan html 4.01 diawali dengan <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> sebelum tag <html>
+Contoh penulisan html 4.01
 
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -96,7 +96,7 @@ Contoh penulisan html 4.01 diawali dengan <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTM
 
 XHTML merupakan kependekan dari The Extensible HyperText Markup Language yaitu gabungan dari bahasa HTML dan XML. XML yaitu EXtensible Markup Language berbeda dengan HTML, XML memiliki fungsi untuk mengirim,menyimpan dan membawa data artinya tidak digunakan dalam hal tampilan website. XHTML diluncurkan pertama kali pada tanggal 26 januari 2000 oleh W3C pengembang dari HTML.
 
-Contoh penulisan xhtml 1.0 diawali dengan <?xml version="1.0" encoding="UTF-8"?> kemudian diikuti dengan <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> sebelum tag <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">.
+Contoh penulisan xhtml 1.0
 
 ```html
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -107,7 +107,7 @@ Contoh penulisan xhtml 1.0 diawali dengan <?xml version="1.0" encoding="UTF-8"?>
 
 HTML 5 hadir dari adanya kerja sama antara W3C dengan sebuah kelompok yang dinamakan WHATWG yaitu Web Hypertext Application Technology Working Group. Sedangkan pada saat itu juga XHTML 2.0 sedang dikembangkan yang kemudian terpaksa dihentikan karena dirasa kurang menarik dan tidak realistis dalam perubahannya. Untuk secara resmi HTML 5 diperkenalkan kepada publik pada tanggal 28 oktober 2014.
 
-Contoh penulisan html 5 diawali dengan <!DOCTYPE html> sebelum tag <html>
+Contoh penulisan html 5
 
 ```html
 <!DOCTYPE html>

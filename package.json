@@ -6,10 +6,12 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "css": "sass src/styles/global.scss src/styles/global.css --watch"
   },
   "devDependencies": {
-    "astro": "^0.25.2"
+    "astro": "^0.25.2",
+    "sass": "^1.49.11"
   },
   "dependencies": {
     "@astrojs/prism": "^0.4.1",

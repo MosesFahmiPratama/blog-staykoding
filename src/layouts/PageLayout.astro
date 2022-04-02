@@ -10,9 +10,11 @@ const {content} = Astro.props;
 			<div class="title-post">
 				<h1>{content.title}</h1>
 			</div>
+			<div class="body-post">
 			<!-- render single artikel -->
 	      <slot />
       <!-- end render -->
+      </div>
 		</main>
 	</article>
 </BaseLayout>
