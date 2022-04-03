@@ -197,29 +197,33 @@ nav {
 					border-radius: 10px;
 					background: var(--bg-color-1);
 				}
-				p {
-					margin-top: 20px;
-					color: $text_p;
-				}
-				.read-more {
-					margin-top: 15px;
-					display: flex;
-					justify-content: flex-end;
-					transition: all 0.9s;
-					a {
-						justify-content: flex-end;
-						padding: 5px 10px;
-						border: 2px solid var(--bg-color-1);
-						border-radius: 20px;
-						color: $card_text_p;
-						text-decoration: none;
-						font-size: 0.9em;
-						font-weight: bold;
-						&:hover {
-							background: var(--bg-color-1);
-							color: $text_button;
-						}
-					}
+				.text-description {
+				  display: flex;
+				  flex-direction: column;
+				  p {
+  					margin-top: 20px;
+  					color: $text_p;
+  				}
+  				.read-more {
+  				  margin-top: -10px;
+  					display: flex;
+  					justify-content: flex-end;
+  					transition: all 0.9s;
+  					a {
+  						justify-content: flex-end;
+  						padding: 5px 10px;
+  						border: 3px solid var(--bg-color-1);
+  						border-radius: 20px;
+  						color: $card_text_p;
+  						text-decoration: none;
+  						font-size: 0.9em;
+  						font-weight: bold;
+  						&:hover {
+  							background: var(--bg-color-1);
+  							color: $text_button;
+  						}
+  					}
+  				}
 				}
 			}
 		}
@@ -448,16 +452,30 @@ footer {
 			}
 			ul {
 				display: block;
-				margin-left: 10px;
+				margin: .5em 0 .5em 1.5em;
 				li {
-					font-size: .9em;
+					font-size: 1.2em;
 					line-height: 1.7;
 					font-family: $font-family_3;
 					color: $text_p;
 				}
 			}
+			ol {
+			  margin: .5em 0 .5em 1.5em;
+			  li {
+			    font-family: $font-family_3;
+			    color: $text_p;
+			    line-height: 1.7;
+			  }
+			}
 			img {
+			  margin: 15px 0;
 				width: 50%;
+				border-radius: 5px;
+				box-shadow: 0 2px 8px 0 rgb(60 64 67 / 11% );
+			}
+			pre code {
+			  font-size: 1em;
 			}
 		}
 		p {
@@ -480,6 +498,7 @@ footer {
 			background: var(--main-color-2);
 			padding: 15px;
 			.title-widget {
+			  font-size: 1.3em;
 				font-weight: 600;
 				margin-bottom: 20px;
 				color: $text_head;
@@ -491,9 +510,11 @@ footer {
 						display: flex;
 						align-items: center;
 						margin-bottom: 10px;
+						border-radius: 5px;
+						margin: 0 auto 25px;
+						padding: 3% 5%;
+				    box-shadow: 0 2px 8px 0 rgb(60 64 67 / 11% );
 						img {
-							width: 50px;
-							height: 50px;
 							border-radius: 50%;
 						}
 						a {
@@ -619,17 +640,16 @@ footer {
 						height: 6px;
 						display: none;
 					}
-					p {
-						margin-top: 10px;
-						font-size: 14px;
-					}
-					.read-more {
-						position: absolute;
-						bottom: 20%;
-						right: 5px;
-						a {
-							font-size: 0.7em;
-						}
+					.text-description {
+					  p {
+  						margin-top: 10px;
+  						font-size: 14px;
+  					}
+  					.read-more {
+  						a {
+  							font-size: 0.7em;
+  						}
+  					}
 					}
 				}
 			}
@@ -711,8 +731,13 @@ footer {
 				}
 				pre {
 					code {
-						font-size: 0.7em;
+						font-size: .9em;
 					}
+				}
+				ul {
+				  li {
+				    font-size: 1em;
+				  }
 				}
 				img {
 					width: 100%;

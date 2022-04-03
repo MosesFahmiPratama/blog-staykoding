@@ -182,27 +182,31 @@ nav .menu ul li a {
   border-radius: 10px;
   background: var(--bg-color-1);
 }
-.post .featured .card-featured .description p {
+.post .featured .card-featured .description .text-description {
+  display: flex;
+  flex-direction: column;
+}
+.post .featured .card-featured .description .text-description p {
   margin-top: 20px;
   color: var(--text-p);
 }
-.post .featured .card-featured .description .read-more {
-  margin-top: 15px;
+.post .featured .card-featured .description .text-description .read-more {
+  margin-top: -10px;
   display: flex;
   justify-content: flex-end;
   transition: all 0.9s;
 }
-.post .featured .card-featured .description .read-more a {
+.post .featured .card-featured .description .text-description .read-more a {
   justify-content: flex-end;
   padding: 5px 10px;
-  border: 2px solid var(--bg-color-1);
+  border: 3px solid var(--bg-color-1);
   border-radius: 20px;
   color: var(--card-text-p);
   text-decoration: none;
   font-size: 0.9em;
   font-weight: bold;
 }
-.post .featured .card-featured .description .read-more a:hover {
+.post .featured .card-featured .description .text-description .read-more a:hover {
   background: var(--bg-color-1);
   color: var(--text-button);
 }
@@ -430,16 +434,30 @@ footer .copyright {
 }
 .article-post main .body-post ul {
   display: block;
-  margin-left: 10px;
+  margin: 0.5em 0 0.5em 1.5em;
 }
 .article-post main .body-post ul li {
-  font-size: 0.9em;
+  font-size: 1.2em;
   line-height: 1.7;
   font-family: "Roboto", Sans-Serif;
   color: var(--text-p);
 }
+.article-post main .body-post ol {
+  margin: 0.5em 0 0.5em 1.5em;
+}
+.article-post main .body-post ol li {
+  font-family: "Roboto", Sans-Serif;
+  color: var(--text-p);
+  line-height: 1.7;
+}
 .article-post main .body-post img {
+  margin: 15px 0;
   width: 50%;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px 0 rgba(60, 64, 67, 0.11);
+}
+.article-post main .body-post pre code {
+  font-size: 1em;
 }
 .article-post main p {
   font-family: "Roboto", Sans-Serif;
@@ -462,6 +480,7 @@ footer .copyright {
   padding: 15px;
 }
 .article-post aside .widget .title-widget {
+  font-size: 1.3em;
   font-weight: 600;
   margin-bottom: 20px;
   color: var(--text-head);
@@ -471,10 +490,12 @@ footer .copyright {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  border-radius: 5px;
+  margin: 0 auto 25px;
+  padding: 3% 5%;
+  box-shadow: 0 2px 8px 0 rgba(60, 64, 67, 0.11);
 }
 .article-post aside .widget .list-post ul li img {
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
 }
 .article-post aside .widget .list-post ul li a {
@@ -593,16 +614,11 @@ footer .copyright {
     height: 6px;
     display: none;
   }
-  .post .featured .card-featured .description p {
+  .post .featured .card-featured .description .text-description p {
     margin-top: 10px;
     font-size: 14px;
   }
-  .post .featured .card-featured .description .read-more {
-    position: absolute;
-    bottom: 20%;
-    right: 5px;
-  }
-  .post .featured .card-featured .description .read-more a {
+  .post .featured .card-featured .description .text-description .read-more a {
     font-size: 0.7em;
   }
   .post .new-post {
@@ -671,7 +687,10 @@ footer .copyright {
     font-size: 1em;
   }
   .article-post main .body-post pre code {
-    font-size: 0.7em;
+    font-size: 0.9em;
+  }
+  .article-post main .body-post ul li {
+    font-size: 1em;
   }
   .article-post main .body-post img {
     width: 100%;
