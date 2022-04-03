@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /categories
+Sitemap: https://staykoding.pages.dev/sitemap.xml
