@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro'
+import Comments from '../components/Comments.jsx'
 
   //get data postingan dari file markdown di folder pages
   const allPosts = Astro.fetchContent('../pages/*.md');
@@ -23,6 +24,20 @@ const {content} = Astro.props;
 			<!-- render single artikel -->
 	      <slot />
       <!-- end render -->
+        <Comments client:load />
+        <script>
+      wpac_init = window.wpac_init || [];
+      wpac_init.push({widget: 'Comment', id: 34411});
+      (function() {
+          if ('WIDGETPACK_LOADED' in window) return;
+          WIDGETPACK_LOADED = true;
+          var mc = document.createElement('script');
+          mc.type = 'text/javascript';
+          mc.async = true;
+          mc.src = 'https://cdn.widgetpack.com/widget.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+      })();
+      </script>
       </div>
 		</main>
 		<aside>
