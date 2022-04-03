@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://staykoding.pages.dev/sitemap.xml
