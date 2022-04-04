@@ -2,6 +2,7 @@
 :root {
   --bg-color-1: #1cbfc3;
   --bg-color-2: #0d9ad0;
+  --bg-blockquote: rgb(245,245,245);
   --main-color-1: #f7fdfd;
   --main-color-2: #ffffff;
   --text-head: #444444;
@@ -16,13 +17,19 @@
   --text-button: #fefefe;
   --button-nav: #1cbfc3;
   --label: #444444;
-  --shadow-box: #D2D1D1;
+  --shadow-box: 6px 6px 12px #e1e6e6,
+                -6px -6px 12px #ffffff;
+  --shadow-button: 6px 6px 12px #158f92,
+                    -6px -6px 12px #23eff4;
+  --shadow-button-dark: 6px 6px 12px #e0e0e0,
+                        -6px -6px 12px #ffffff;
 }
 
 .dark {
   --bg-color-1: #494A4A;
   --bg-color-2: #515151;
-  --main-color-1: #444444;
+  --bg-blockquote: rgb(82,82,82);
+  --main-color-1: #101010;
   --main-color-2: #101010;
   --text-head: #D0D0D0;
   --text-p: #D0D0D0;
@@ -36,7 +43,11 @@
   --text-button: #ffffff;
   --button-nav: #101010;
   --label: #D0D0D0;
-  --shadow-box: #D2D1D1;
+  --shadow-box: 5px 5px 3px #060606, -5px -5px 3px #1a1a1a;
+  --shadow-button: 6px 6px 12px #373838,
+                    -6px -6px 12px #5b5d5d;
+  --shadow-button-dark: 5px 5px 3px #060606,
+                        -5px -5px 3px #1a1a1a;
 }
 
 * {
@@ -79,13 +90,11 @@ header .more-menu button {
   height: 50px;
   border-radius: 50%;
   font-size: 1.4em;
-  background-color: var(--bg-color-1);
-  color: var(--main-color-2);
+  background: var(--main-color-2);
+  color: var(--bg-color-1);
+  box-shadow: var(--shadow-button-dark);
   border: none;
   cursor: pointer;
-}
-header .more-menu button:hover {
-  box-shadow: 2px 2px 3px var(--shadow-box);
 }
 
 nav {
@@ -143,7 +152,7 @@ nav .menu ul li a {
   width: 100%;
   height: 250px;
   background: var(--main-color-2);
-  box-shadow: 1px 3px 4px var(--shadow-box);
+  box-shadow: var(--shadow-box);
   margin-bottom: 20px;
   display: flex;
   overflow: hidden;
@@ -190,26 +199,6 @@ nav .menu ul li a {
   margin-top: 20px;
   color: var(--text-p);
 }
-.post .featured .card-featured .description .text-description .read-more {
-  margin-top: -10px;
-  display: flex;
-  justify-content: flex-end;
-  transition: all 0.9s;
-}
-.post .featured .card-featured .description .text-description .read-more a {
-  justify-content: flex-end;
-  padding: 5px 10px;
-  border: 3px solid var(--bg-color-1);
-  border-radius: 20px;
-  color: var(--card-text-p);
-  text-decoration: none;
-  font-size: 0.9em;
-  font-weight: bold;
-}
-.post .featured .card-featured .description .text-description .read-more a:hover {
-  background: var(--bg-color-1);
-  color: var(--text-button);
-}
 .post .new-post {
   width: 90%;
   height: auto;
@@ -236,7 +225,7 @@ nav .menu ul li a {
   width: 300px;
   height: 320px;
   border-radius: 7px;
-  box-shadow: 1px 3px 4px var(--shadow-box);
+  box-shadow: var(--shadow-box);
   margin: 20px;
   position: relative;
 }
@@ -259,7 +248,6 @@ nav .menu ul li a {
   top: 10px;
   left: 10px;
   color: var(--text-label);
-  text-shadow: 1px 2px 2px #C4C4C4;
   background: var(--bg-color-1);
   padding: 5px 10px;
   border-radius: 10px;
@@ -289,14 +277,6 @@ nav .menu ul li a {
 .post .new-post .card-container .card .judul .author span img {
   border-radius: 50%;
   margin-right: 10px;
-}
-.post .new-post .card-container .card .judul .read-more {
-  color: var(--bg-color-1);
-  text-decoration: none;
-  position: absolute;
-  right: 10px;
-  bottom: 18px;
-  font-size: 0.5em;
 }
 .post .new-post .navigation {
   display: flex;
@@ -425,10 +405,10 @@ footer .copyright {
 .article-post main .body-post a {
   text-decoration: none;
   color: var(--text-link);
-  font-family: "Roboto", Sans-Serif;
+  font-family: "Roboto", sans-serif;
 }
 .article-post main .body-post blockquote {
-  background: rgb(245, 245, 245);
+  background: var(--bg-blockquote);
   padding: 10px;
   border-left: 3px solid rgb(192, 70, 246);
 }
@@ -439,14 +419,14 @@ footer .copyright {
 .article-post main .body-post ul li {
   font-size: 1.2em;
   line-height: 1.7;
-  font-family: "Roboto", Sans-Serif;
+  font-family: "Roboto", sans-serif;
   color: var(--text-p);
 }
 .article-post main .body-post ol {
   margin: 0.5em 0 0.5em 1.5em;
 }
 .article-post main .body-post ol li {
-  font-family: "Roboto", Sans-Serif;
+  font-family: "Roboto", sans-serif;
   color: var(--text-p);
   line-height: 1.7;
 }
@@ -459,8 +439,20 @@ footer .copyright {
 .article-post main .body-post pre code {
   font-size: 1em;
 }
+.article-post main .body-post pre code span {
+  font-family: "Roboto", sans-serif !important;
+}
+.article-post main .body-post .box-comment {
+  margin-top: 30px;
+}
+.article-post main .body-post .box-comment .title-comment {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  color: var(--text-head);
+}
 .article-post main p {
-  font-family: "Roboto", Sans-Serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.7;
 }
 .article-post main img {
@@ -557,7 +549,9 @@ footer .copyright {
     cursor: pointer;
     width: 40px;
     height: 40px;
-    background: #3ccfd5;
+    border-radius: 86px;
+    background: var(--bg-color-1);
+    box-shadow: var(--shadow-button);
     font-size: 1em;
     display: flex;
     align-items: center;
@@ -618,9 +612,6 @@ footer .copyright {
     margin-top: 10px;
     font-size: 14px;
   }
-  .post .featured .card-featured .description .text-description .read-more a {
-    font-size: 0.7em;
-  }
   .post .new-post {
     width: 100%;
   }
@@ -638,9 +629,6 @@ footer .copyright {
   .post .new-post .card-container .card .judul h2 {
     text-align: center;
     color: var(--text-head);
-  }
-  .post .new-post .card-container .card .judul .read-more {
-    color: var(--card-text-p);
   }
   .post .new-post .navigation {
     font-size: 1em;
@@ -706,9 +694,6 @@ footer .copyright {
 @media (max-width: 420px) {
   .post .new-post .card-container .card .judul .author {
     font-size: 0.7em;
-  }
-  .post .new-post .card-container .card .judul .read-more {
-    font-size: 0.9em;
   }
 }
 

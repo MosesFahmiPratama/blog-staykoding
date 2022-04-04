@@ -11,10 +11,12 @@ $text_label: var(--text-label);
 $text_button: var(--text-button);
 $button_nav: var(--button-nav);
 $line_head: var(--line-head);
+$bg-blockquote: var(--bg-blockquote);
 $label: var(--label);
+$shadow_button: var(--shadow-button);
+$shadow_button_dark: var(--shadow-button-dark);
 $font-family_1: "Poppins", sans-serif;
 $font-family_2: "Roboto", sans-serif;
-$font-family_3: 'Roboto', Sans-Serif;
 $background-color_1: var(--main-color-2);
 $background-color_2: var(--bg-color-1);
 
@@ -22,6 +24,7 @@ $background-color_2: var(--bg-color-1);
 :root {
 	--bg-color-1: #1cbfc3;
 	--bg-color-2: #0d9ad0;
+	--bg-blockquote: rgb(245,245,245);
 	--main-color-1: #f7fdfd;
 	--main-color-2: #ffffff;
 	--text-head: #444444;
@@ -36,12 +39,18 @@ $background-color_2: var(--bg-color-1);
 	--text-button: #fefefe;
 	--button-nav: #1cbfc3;
 	--label: #444444;
-	--shadow-box: #D2D1D1;
+	--shadow-box: 6px 6px 12px #e1e6e6, 
+	              -6px -6px 12px #ffffff;
+	--shadow-button: 6px 6px 12px #158f92,
+                   -6px -6px 12px #23eff4;
+	--shadow-button-dark: 6px 6px 12px #e0e0e0,
+                       -6px -6px 12px #ffffff;
 }
 .dark {
 	--bg-color-1: #494A4A;
 	--bg-color-2: #515151;
-	--main-color-1: #444444;
+	--bg-blockquote: rgb(82,82,82);
+	--main-color-1: #101010;
 	--main-color-2: #101010;
 	--text-head: #D0D0D0;
 	--text-p: #D0D0D0;
@@ -55,7 +64,11 @@ $background-color_2: var(--bg-color-1);
 	--text-button: #ffffff;
 	--button-nav: #101010;
 	--label: #D0D0D0;
-	--shadow-box: #D2D1D1;
+	--shadow-box: 5px 5px 3px #060606, -5px -5px 3px #1a1a1a;
+	--shadow-button: 6px 6px 12px #373838,
+                   -6px -6px 12px #5b5d5d;
+	--shadow-button-dark: 5px 5px 3px #060606,
+                       -5px -5px 3px #1a1a1a;;
 }
 * {
 	margin: 0;
@@ -96,13 +109,11 @@ header {
 			height: 50px;
 			border-radius: 50%;
 			font-size: 1.4em;
-			background-color: $background-color_2;
-			color: $color_2;
+			background: $background-color_1;
+			color: $color_1;
+			box-shadow: $shadow_button_dark;
 			border: none;
 			cursor: pointer;
-			&:hover {
-				box-shadow: 2px 2px 3px var(--shadow-box);
-			}
 		}
 	}
 }
@@ -160,7 +171,7 @@ nav {
 			width: 100%;
 			height: 250px;
 			background: var(--main-color-2);
-			box-shadow: 1px 3px 4px var(--shadow-box);
+			box-shadow: var(--shadow-box);
 			margin-bottom: 20px;
 			display: flex;
 			overflow: hidden;
@@ -204,26 +215,6 @@ nav {
   					margin-top: 20px;
   					color: $text_p;
   				}
-  				.read-more {
-  				  margin-top: -10px;
-  					display: flex;
-  					justify-content: flex-end;
-  					transition: all 0.9s;
-  					a {
-  						justify-content: flex-end;
-  						padding: 5px 10px;
-  						border: 3px solid var(--bg-color-1);
-  						border-radius: 20px;
-  						color: $card_text_p;
-  						text-decoration: none;
-  						font-size: 0.9em;
-  						font-weight: bold;
-  						&:hover {
-  							background: var(--bg-color-1);
-  							color: $text_button;
-  						}
-  					}
-  				}
 				}
 			}
 		}
@@ -252,7 +243,7 @@ nav {
 				width: 300px;
 				height: 320px;
 				border-radius: 7px;
-				box-shadow: 1px 3px 4px var(--shadow-box);
+				box-shadow: var(--shadow-box);
 				margin: 20px;
 				position: relative;
 				.image {
@@ -273,7 +264,6 @@ nav {
 						top: 10px;
 						left: 10px;
 						color: $text_label;
-						text-shadow: 1px 2px 2px #C4C4C4;
 						background: var(--bg-color-1);
 						padding: 5px 10px;
 						border-radius: 10px;
@@ -305,14 +295,6 @@ nav {
 								margin-right: 10px;
 							}
 						}
-					}
-					.read-more {
-						color: $color_1;
-						text-decoration: none;
-						position: absolute;
-						right: 10px;
-						bottom: 18px;
-						font-size: 0.5em;
 					}
 				}
 			}
@@ -443,10 +425,10 @@ footer {
 			a {
 				text-decoration: none;
 				color: $text_link;
-				font-family: $font-family_3;
+				font-family: $font-family_2;
 			}
 			blockquote {
-				background: rgb(245,245,245);
+				background: $bg-blockquote;
 				padding: 10px;
 				border-left: 3px solid rgb(192,70,246);
 			}
@@ -456,14 +438,14 @@ footer {
 				li {
 					font-size: 1.2em;
 					line-height: 1.7;
-					font-family: $font-family_3;
+					font-family: $font-family_2;
 					color: $text_p;
 				}
 			}
 			ol {
 			  margin: .5em 0 .5em 1.5em;
 			  li {
-			    font-family: $font-family_3;
+			    font-family: $font-family_2;
 			    color: $text_p;
 			    line-height: 1.7;
 			  }
@@ -474,12 +456,26 @@ footer {
 				border-radius: 5px;
 				box-shadow: 0 2px 8px 0 rgb(60 64 67 / 11% );
 			}
-			pre code {
+			pre {
+			  code {
 			  font-size: 1em;
+  			  span {
+  			    font-family: $font-family_2 !important;
+  			  }
+			  }
+			}
+			.box-comment {
+			  margin-top: 30px;
+			  .title-comment {
+			    font-weight: 600;
+			    margin-bottom: 20px;
+			    font-size: 1.3em;
+			    color: $text_head;
+			  }
 			}
 		}
 		p {
-			font-family: $font-family_3;
+			font-family: $font-family_2;
 			line-height: 1.7;
 		}
 		img {
@@ -584,7 +580,9 @@ footer {
 				cursor: pointer;
 				width: 40px;
 				height: 40px;
-				background: #3ccfd5;
+				border-radius: 86px;
+        background: $color_1;
+        box-shadow: $shadow_button;
 				font-size: 1em;
 				display: flex;
 				align-items: center;
@@ -645,11 +643,6 @@ footer {
   						margin-top: 10px;
   						font-size: 14px;
   					}
-  					.read-more {
-  						a {
-  							font-size: 0.7em;
-  						}
-  					}
 					}
 				}
 			}
@@ -671,9 +664,6 @@ footer {
 						h2 {
 							text-align: center;
 							color: $text_head;
-						}
-						.read-more {
-						  color: $card_text_p;
 						}
 					}
 				}
@@ -761,9 +751,6 @@ footer {
 					.judul {
 						.author {
 							font-size: 0.7em;
-						}
-						.read-more {
-							font-size: 0.9em;
 						}
 					}
 				}
