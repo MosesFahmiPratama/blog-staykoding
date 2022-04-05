@@ -84,13 +84,21 @@ header {
 	justify-content: space-around;
 	align-items: center;
 	.social-media {
-		width: 100px;
 		ul {
+		  width: 150px;
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: space-between;
+			margin-left: -20px;
 			li {
 				list-style: none;
 				font-size: 1.5em;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				box-shadow: $shadow_button_dark;
 				svg {
 					color: $color_1;
 				}
@@ -183,6 +191,7 @@ nav {
 				transform: skewX(-7deg);
 				img {
 					transition: all 1s;
+					transform: skewX(0deg);
 					&:hover {
 						transform: scale(1.2);
 					}
@@ -370,13 +379,15 @@ footer {
 		}
 	}
 	.copyright {
+	  margin-top: 20px;
 		display: flex;
-		align-items: center;
-		position: absolute;
-		bottom: 0;
-		left: 40%;
+		justify-content: center;
 		font-size: 1em;
 		color: $text_p;
+		
+		span {
+		  font-size: 1em;
+		}
 	}
 }
 .article-post {
@@ -389,7 +400,7 @@ footer {
 		margin: 15px;
 		padding: 15px;
 		background: var(--main-color-2);
-		flex: 2;
+		flex: 1.8;
 		.title-post {
 			text-align: center;
 			margin-bottom: 20px;
@@ -487,7 +498,7 @@ footer {
 		}
 	}
 	aside {
-		flex: 1;
+		flex: 1.2;
 		margin: 15px 15px 15px 0;
 		width: 90%;
 		.widget {
@@ -532,9 +543,6 @@ footer {
 @media (max-width: 768px) {
 	header {
 		height: 90px;
-		.social-media {
-			display: none;
-		}
 		.logo {
 			img {
 				width: 230px;
@@ -699,11 +707,7 @@ footer {
 				}
 			}
 		}
-		.copyright {
-			position: relative;
-			left: 0;
-			font-size: 0.8em;
-		}
+	
 	}
 	.article-post {
 		flex-direction: column;
@@ -744,6 +748,11 @@ footer {
 	}
 }
 @media (max-width: 420px) {
+  header {
+    .social-media {
+			display: none;
+		}
+  }
 	.post {
 		.new-post {
 			.card-container {
