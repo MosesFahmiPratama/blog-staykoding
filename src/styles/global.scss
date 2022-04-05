@@ -15,6 +15,7 @@ $bg-blockquote: var(--bg-blockquote);
 $label: var(--label);
 $shadow_button: var(--shadow-button);
 $shadow_button_dark: var(--shadow-button-dark);
+$shadow_quotes: var(--shadow-quotes);
 $font-family_1: "Poppins", sans-serif;
 $font-family_2: "Roboto", sans-serif;
 $background-color_1: var(--main-color-2);
@@ -45,6 +46,8 @@ $background-color_2: var(--bg-color-1);
                    -6px -6px 12px #23eff4;
 	--shadow-button-dark: 6px 6px 12px #e0e0e0,
                        -6px -6px 12px #ffffff;
+  --shadow-quotes: 11px 11px 21px #c6c6c5,
+             -11px -11px 21px #ffffff;
 }
 .dark {
 	--bg-color-1: #494A4A;
@@ -68,7 +71,8 @@ $background-color_2: var(--bg-color-1);
 	--shadow-button: 6px 6px 12px #373838,
                    -6px -6px 12px #5b5d5d;
 	--shadow-button-dark: 5px 5px 3px #060606,
-                       -5px -5px 3px #1a1a1a;;
+                       -5px -5px 3px #1a1a1a;
+  --shadow-quotes: ;
 }
 * {
 	margin: 0;
@@ -477,9 +481,48 @@ footer {
 			}
 			.quotes {
 			  width: 100%;
-        box-shadow: 2px 5px 10px #cfdef3;
+        box-shadow: $shadow_quotes;
         background: #fefefd;
         border-radius: 30px;
+        blockquote {
+          position: relative;
+          height: 100%;
+          border-left: none !important;
+          padding: 0 !important;
+          border-radius: 20px;
+          &:before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Brush Script MT", cursive;
+            position: absolute;
+            border-radius: 20px;
+            content: "Note!";
+            width: 60px;
+            height: 100%;
+            background: url("https://i.ibb.co/x6dqTvd/bg-quote-min.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          p {
+            margin-left: 80px;
+            font-size: $text_p;
+            font-family: $font-family_2;
+            font-style: italic;
+            line-height: 25px;
+            text-align: center;
+            padding: 10px;
+            &:after,
+            &:before {
+              position: abdolute;
+              content: ' " ';
+              font-size: 30px;
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
 			}
 			.box-comment {
 			  margin-top: 30px;

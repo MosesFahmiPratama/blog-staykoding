@@ -23,6 +23,8 @@
                     -6px -6px 12px #23eff4;
   --shadow-button-dark: 6px 6px 12px #e0e0e0,
                         -6px -6px 12px #ffffff;
+  --shadow-quotes: 11px 11px 21px #c6c6c5,
+             -11px -11px 21px #ffffff;
 }
 
 .dark {
@@ -48,6 +50,7 @@
                     -6px -6px 12px #5b5d5d;
   --shadow-button-dark: 5px 5px 3px #060606,
                         -5px -5px 3px #1a1a1a;
+  --shadow-quotes: ;
 }
 
 * {
@@ -452,9 +455,47 @@ footer .copyright span {
 }
 .article-post main .body-post .quotes {
   width: 100%;
-  box-shadow: 2px 5px 10px #cfdef3;
+  box-shadow: var(--shadow-quotes);
   background: #fefefd;
   border-radius: 30px;
+}
+.article-post main .body-post .quotes blockquote {
+  position: relative;
+  height: 100%;
+  border-left: none !important;
+  padding: 0 !important;
+  border-radius: 20px;
+}
+.article-post main .body-post .quotes blockquote:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Brush Script MT", cursive;
+  position: absolute;
+  border-radius: 20px;
+  content: "Note!";
+  width: 60px;
+  height: 100%;
+  background: url("https://i.ibb.co/x6dqTvd/bg-quote-min.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.article-post main .body-post .quotes blockquote p {
+  margin-left: 80px;
+  font-size: var(--text-p);
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  line-height: 25px;
+  text-align: center;
+  padding: 10px;
+}
+.article-post main .body-post .quotes blockquote p:after, .article-post main .body-post .quotes blockquote p:before {
+  position: abdolute;
+  content: ' " ';
+  font-size: 30px;
+  width: 20px;
+  height: 20px;
 }
 .article-post main .body-post .box-comment {
   margin-top: 30px;
