@@ -1,5 +1,31 @@
 ---
 import { Icon } from 'astro-icon'
+const dataLink = [
+    {
+      name : 'Home',
+      url  : '/'
+    },
+    {
+      name : 'HTML',
+      url  : '/categories/html'
+    },
+    {
+      name : 'CSS',
+      url  : '/categories/css'
+    },
+    {
+      name : 'Javascript',
+      url  : '/categories/javascript'
+    },
+    {
+      name : 'PHP',
+      url  : '/categories/php'
+    },
+    {
+      name : 'Astro',
+      url  : '/categories/astro'
+    }
+  ]
 ---
 
   <nav>
@@ -13,10 +39,9 @@ import { Icon } from 'astro-icon'
 				<Icon name="codicon:chrome-close" width={20}/>
 			</span>
 			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/categories/html">HTML</a></li>
-				<li><a href="/categories/css">CSS</a></li>
-				<li><a href="/categories/tips">Tips</a></li>
+			 {dataLink.map(link => (
+			  <li><a href={link.url}>{link.name}</a></li>
+			  ))}
 			</ul>
 		</div>
 	</nav>
