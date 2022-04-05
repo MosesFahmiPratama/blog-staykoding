@@ -18,7 +18,7 @@ export async function getStaticPaths({rss, paginate}) {
   rss({
     //The RSS Feeds title, description, and custom metadata.
     title: 'StayKoding',
-    description: 'Example blog in astro',
+    description: 'staykoding merupakan blog yang membahas seputar dunia pemrograman dan pembelajaran serta tutorial pemrograman terkhususnya web development',
     customData: '<language>en-id</language>',
     //The list of items for your rss feed, sorted
     items: sortedPost.map(item => ({
@@ -32,7 +32,7 @@ export async function getStaticPaths({rss, paginate}) {
     dest: '/feed.xml',
   });
   
-  return paginate(sortedPost, {pageSize: 3});
+  return paginate(sortedPost, {pageSize: 6});
 }
 
 const {page} = Astro.props;
@@ -59,7 +59,7 @@ const description = "staykoding merupakan blog yang membahas seputar dunia pemro
 					<div class="text-description">
 					  <p>{result.description.substring(0,110)+'..'}</p>
   					<div class="read-more">
-  						<a href={result.url}>Read More</a>
+  					
   					</div>
 					</div>
 				</div>
@@ -85,8 +85,7 @@ const description = "staykoding merupakan blog yang membahas seputar dunia pemro
   					</div>
   					<div class="judul">
   						<h2><a href={post.url}>{post.title}</a></h2>
-  						<p class="author"><span><img src="https://i.ibb.co/SJv7LY0/admin-staykoding.jpg" width="40" height="40" alt="author staykoding" loading="lazy"></span></p>
-  						<a class="read-more" href={post.url}>Read more</a>
+  						<p class="author"><span><img src="https://i.ibb.co/SJv7LY0/admin-staykoding.jpg" width="40" height="40" alt="author staykoding" loading="lazy"></span>{post.author}</p>
   					</div>
   				</div>
           ))}
