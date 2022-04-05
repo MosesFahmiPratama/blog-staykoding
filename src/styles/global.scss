@@ -395,7 +395,7 @@ footer {
 	justify-content: space-around;
 	background: var(--main-color-1);
 	main {
-		width: 90%;
+		width: 50%;
 		height: auto;
 		margin: 15px;
 		padding: 15px;
@@ -427,9 +427,9 @@ footer {
 			  color: $text_head;
 			}
 			p {
-				margin: 10px 0;
+				margin: 25px 0;
 				line-height: 1.7;
-				font-size: 1.2em;
+				font-size: 16px;
 				color: $text_p;
 				font-family: $font-family_2;
 			}
@@ -475,6 +475,12 @@ footer {
   			  }
 			  }
 			}
+			.quotes {
+			  width: 100%;
+        box-shadow: 2px 5px 10px #cfdef3;
+        background: #fefefd;
+        border-radius: 30px;
+			}
 			.box-comment {
 			  margin-top: 30px;
 			  .title-comment {
@@ -485,17 +491,7 @@ footer {
 			  }
 			}
 		}
-		p {
-			font-family: $font-family_2;
-			line-height: 1.7;
-		}
-		img {
-			width: 50%;
-		}
-		a {
-			text-decoration: none;
-			color: $color_1;
-		}
+		
 	}
 	aside {
 		flex: 1.2;

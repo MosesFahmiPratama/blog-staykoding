@@ -370,7 +370,7 @@ footer .copyright span {
   background: var(--main-color-1);
 }
 .article-post main {
-  width: 90%;
+  width: 50%;
   height: auto;
   margin: 15px;
   padding: 15px;
@@ -404,9 +404,9 @@ footer .copyright span {
   color: var(--text-head);
 }
 .article-post main .body-post p {
-  margin: 10px 0;
+  margin: 25px 0;
   line-height: 1.7;
-  font-size: 1.2em;
+  font-size: 16px;
   color: var(--text-p);
   font-family: "Roboto", sans-serif;
 }
@@ -450,6 +450,12 @@ footer .copyright span {
 .article-post main .body-post pre code span {
   font-family: "Roboto", sans-serif !important;
 }
+.article-post main .body-post .quotes {
+  width: 100%;
+  box-shadow: 2px 5px 10px #cfdef3;
+  background: #fefefd;
+  border-radius: 30px;
+}
 .article-post main .body-post .box-comment {
   margin-top: 30px;
 }
@@ -458,17 +464,6 @@ footer .copyright span {
   margin-bottom: 20px;
   font-size: 1.3em;
   color: var(--text-head);
-}
-.article-post main p {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.7;
-}
-.article-post main img {
-  width: 50%;
-}
-.article-post main a {
-  text-decoration: none;
-  color: var(--bg-color-1);
 }
 .article-post aside {
   flex: 1.2;
