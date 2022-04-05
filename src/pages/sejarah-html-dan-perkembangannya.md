@@ -4,7 +4,7 @@ setup: |
 
 title: Mengenal Sejarah HTML dan versinya
 description: Berikut sejarah HTML yang dapat menjadi referensi kamu untuk belajar lebih dalam lagi tentang html.
-date: 2022-03-28
+date: 2021-04-04
 author: "Moses Fahmi Pratama"
 img: "https://1.bp.blogspot.com/-As-Wa_nGgQI/YGjOZQ2IBDI/AAAAAAAACCE/a76AL-B-UUEJGOskcSKW5tUR5G3S_DpbQCNcBGAsYHQ/s16000/belajar-html-serta-sejarah-html.jpg"
 featured: true

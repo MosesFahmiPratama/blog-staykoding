@@ -4,7 +4,7 @@ setup: |
 
 title: Sejarah css dan perkembangan css
 description: sejarah css berikut ternyata css lahir karena untuk mengatasi munculnya tag-tag baru di 2 web browser ini pada masa awal web browser berkembang
-date: 2022-03-31
+date: 2021-04-06
 author: "Moses Fahmi Pratama"
 img: "https://1.bp.blogspot.com/-PK52xcFIGlw/YGtcdYM8TrI/AAAAAAAACCM/FzeOcRQwRJgsFNb3qUkfNAlTJd6-eYbvwCNcBGAsYHQ/s1280/sejarah-perkembangan-css.jpg"
 categories: 

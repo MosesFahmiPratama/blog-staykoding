@@ -4,7 +4,7 @@ setup: |
 
 title: Sejarah Javascript dan Perkembangan Javascript
 description: Ternyata bahasa pemrograman satu ini yaitu javascript memiliki sejarah panjang dan semakin majunya zaman bahasa pemrograman inipun jauh berkembang.
-date: 2021-01-07
+date: 2021-04-07
 author: "Moses Fahmi Pratama"
 img: "https://1.bp.blogspot.com/-CGQY4Gkznb8/YG0l5x7LqKI/AAAAAAAACC0/Zh_TZhx8OjAT4W0gkIGTNBCfhtTSL5Y8QCNcBGAsYHQ/s16000/sejarah-perkembangan-javascript.jpg"
 categories: 
