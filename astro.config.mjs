@@ -5,7 +5,7 @@ import react from '@astrojs/react';
 export default defineConfig({
     buildOptions: {
     // site: 'http://example.com',           // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
-    site: 'https://staykoding.pages.dev',
+    site: 'https://staykoding.com',
     sitemap: true,         // Generate sitemap (set to "false" to disable)
   },
   vite: {
