@@ -421,7 +421,7 @@ footer .copyright span {
 .article-post main .body-post blockquote {
   background: var(--bg-blockquote);
   padding: 10px;
-  border-left: 3px solid rgb(192, 70, 246);
+  border-left: 6px solid rgb(155, 15, 217);
 }
 .article-post main .body-post ul {
   display: block;
