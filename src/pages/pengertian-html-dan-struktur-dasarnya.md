@@ -10,7 +10,7 @@ categories :
   - HTML
 ---
 
-Setelah kemarin kita membahas tentang [mengenal sejarah html dan tingkatan versinya](https://www.staykoding.com/2022/01/belajar-sejarah-html-dan-versinya.html). Maka kali ini kita akan langsung saja belajar mengenai apa itu html sebagai bahasa dokumen yang menjadi kerangka pembentuk website serta kegunaan dari html sekaligus mengetahui struktur dasar penulisan tag atau kode html didalam website.
+Setelah kemarin kita membahas tentang [mengenal sejarah html dan tingkatan versinya](https://staykoding.pages.dev/sejarah-html-dan-perkembangannya.html). Maka kali ini kita akan langsung saja belajar mengenai apa itu html sebagai bahasa dokumen yang menjadi kerangka pembentuk website serta kegunaan dari html sekaligus mengetahui struktur dasar penulisan tag atau kode html didalam website.
 
 [![pengertian html dan struktur dasar web html](https://1.bp.blogspot.com/-lqLIsu1KcPQ/YHcghU2kyPI/AAAAAAAACDg/ecNBv6EJ_48BPrOTGi-U-9Mnh_xWLH5rACNcBGAsYHQ/s16000/pengertian-html-dan-struktur-dasar-html.jpg "pengertian html dan struktur dasar web html")](https://1.bp.blogspot.com/-lqLIsu1KcPQ/YHcghU2kyPI/AAAAAAAACDg/ecNBv6EJ_48BPrOTGi-U-9Mnh_xWLH5rACNcBGAsYHQ/s1280/pengertian-html-dan-struktur-dasar-html.jpg)
 

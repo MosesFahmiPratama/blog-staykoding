@@ -7,29 +7,34 @@ description: Berikut sejarah HTML yang dapat menjadi referensi kamu untuk belaja
 date: 2021-04-04
 author: "Moses Fahmi Pratama"
 img: "https://1.bp.blogspot.com/-As-Wa_nGgQI/YGjOZQ2IBDI/AAAAAAAACCE/a76AL-B-UUEJGOskcSKW5tUR5G3S_DpbQCNcBGAsYHQ/s16000/belajar-html-serta-sejarah-html.jpg"
-featured: true
 categories: 
   - HTML
 ---
 
 Hallo para staykoder semuanya, pada artikel pertama staykoding kali ini kita akan membahas mengenai sebuah bahasa dokumen yang dinamakan HTML, untuk para staykoder(sebutan khusus untuk para pembaca artikel staykoding yaa) yang belum tahu serta belum mengenal HTML itu apa sih dan ada apa memangnya dengan HTML eaakk.
 
-[![belajar html dan sejarah html](https://1.bp.blogspot.com/-As-Wa_nGgQI/YGjOZQ2IBDI/AAAAAAAACCE/a76AL-B-UUEJGOskcSKW5tUR5G3S_DpbQCNcBGAsYHQ/s16000/belajar-html-serta-sejarah-html.jpg "belajar html dengan mengenal versi dari html")](https://1.bp.blogspot.com/-As-Wa_nGgQI/YGjOZQ2IBDI/AAAAAAAACCE/a76AL-B-UUEJGOskcSKW5tUR5G3S_DpbQCNcBGAsYHQ/s684/belajar-html-serta-sejarah-html.jpg) 
+![belajar html dan sejarah html](https://1.bp.blogspot.com/-As-Wa_nGgQI/YGjOZQ2IBDI/AAAAAAAACCE/a76AL-B-UUEJGOskcSKW5tUR5G3S_DpbQCNcBGAsYHQ/s16000/belajar-html-serta-sejarah-html.jpg "belajar html dengan mengenal versi dari html")
 
-Maka kali ini  sebagai artikel perdana yang akan admin bahas yaitu belajar HTML dasar baik itu bagi pemula maupun yang sudah kenal sedikit dengan si HTML serta mungkin kamu sudah kenal lama dengan si bahasa dokumen yang satu ini yaitu HTML. Ok kita langsung ke pembahasannya saja dan langsung belajar HTML dengan mulai dari sejarah html itu dibuat.
+Maka kali ini sebagai artikel perdana yang akan admin bahas yaitu belajar HTML dasar baik itu bagi pemula maupun yang sudah kenal sedikit dengan si HTML serta mungkin kamu sudah kenal lama dengan si bahasa dokumen yang satu ini yaitu HTML. Ok kita langsung ke pembahasannya saja dan langsung belajar HTML dengan mulai dari sejarah html itu dibuat.
 
 Sejarah HTML.
 -------------
 
-Awal mula html ada, sebenarnya berawal dari sebuah penelitian seorang pekerja yang bekerja pada sebuah lembaga penelitian yang ada di swiss. Lembaga tersebut dinamakan CERN yaitu sebuah lembaga organisasi eropa yang melakukan riset(penelitian) untuk nuklir. Seorang pekerja yang bekerja pada lembaga CERN tersebut bernama Tim Berners-Lee yang merupakan seorang ahli fisika nih staykoder serta ternyata si bapak Berners-Lee ini pada saat itu juga merupakan seorang kontraktor juga rupanya di lembaga CERN ini staykoder, wah mantap si bapak Tim Berners-Lee ini ya kereen . 
+Awal mula html ada, sebenarnya berawal dari sebuah penelitian seorang pekerja yang bekerja pada sebuah lembaga penelitian yang ada di swiss. Lembaga tersebut dinamakan CERN yaitu sebuah lembaga organisasi eropa yang melakukan riset(penelitian) untuk nuklir. Seorang pekerja yang bekerja pada lembaga CERN tersebut bernama Tim Berners-Lee yang merupakan seorang ahli fisika nih staykoder serta ternyata si bapak Berners-Lee ini pada saat itu juga merupakan seorang kontraktor juga rupanya di lembaga CERN ini staykoder, wah mantap si bapak Tim Berners-Lee ini ya kereen .
 
-Lanjut, kemudian pada tahun 1980-an inilah awal dari perjalanan si bahasa dokumen html ini akan dimulai staykoder, yaitu saat itu bapak Tim Berners-Lee ini mengusulkan serta menyusun sebuah sistem prototipe yang dinamakan ENQUIRE. Nah apa lagi tuh yang namanya sistem prototipe ENQUIRE ini ya staykoder? Berdasarkan buku-buku serta artikel yang admin baca, sitem prototipe enquire ini merupakan sebuah sistem yang dirancang untuk membuat konsep sistem berbasis hiperteks(hypertext) guna untuk membuat fasilitas pembagian serta pembaharuan dalam informasi untuk para peneliti yang ada di CERN saat itu staykoder. 
+Lanjut, kemudian pada tahun 1980-an inilah awal dari perjalanan si bahasa dokumen html ini akan dimulai staykoder, yaitu saat itu bapak Tim Berners-Lee ini mengusulkan serta menyusun sebuah sistem prototipe yang dinamakan ENQUIRE. Nah apa lagi tuh yang namanya sistem prototipe ENQUIRE ini ya staykoder? Berdasarkan buku-buku serta artikel yang admin baca, sitem prototipe enquire ini merupakan sebuah sistem yang dirancang untuk membuat konsep sistem berbasis hiperteks(hypertext) guna untuk membuat fasilitas pembagian serta pembaharuan dalam informasi untuk para peneliti yang ada di CERN saat itu staykoder.
 
 Lalu mengenai hiperteks itu apa? Nah setelah admin baca sedikit tentang hiperteks di kbbi(kamus besar bahasa indoenesia). Berikut pengertian Hiperteks nih staykoder.
 
-> Menurut kbbi atau kamus besar bahasa indonesia hiperteks merupakan sebuah sistem yang dapat menyimpan baik itu gambar, teks, serta berkas yang ada dikomputer untuk memberikan hubungan langsung baik itu dengan teks, bunyi, maupun data tertentu.
+<div class="quotes">
+ <blockquote>
+ 
+ Menurut kbbi atau kamus besar bahasa indonesia hiperteks merupakan sebuah sistem yang dapat menyimpan baik itu gambar, teks, serta berkas yang ada dikomputer untuk memberikan hubungan langsung baik itu dengan teks, bunyi, maupun data tertentu.
+ 
+ </blockquote>
+</div>
 
-Jadi dapat disimpulkan kalau hiperteks merupakan sistem yang ada dikomputer baik itu berupa file gambar, teks maupun yang lainnya, sistem komputer tersebut dapat terkoneksi langsung dengan berkas atau data-data tertentu yang artinya dapat langsung beralih ke dokumen lainnya(baik itu gambar, teks dll). 
+Jadi dapat disimpulkan kalau hiperteks merupakan sistem yang ada dikomputer baik itu berupa file gambar, teks maupun yang lainnya, sistem komputer tersebut dapat terkoneksi langsung dengan berkas atau data-data tertentu yang artinya dapat langsung beralih ke dokumen lainnya(baik itu gambar, teks dll).
 
 Nah dari sini kita paham bahwa sistem ENQUIRE ini yang akan menjadi cikal bakal sebenarnya dari si html ini staykoder. Lalu setelah berlalu sembilan tahun kemudian, saat itu bapak Tim Berners-Lee ini kemudian mengusulkan atau memberi saran untuk membuat sebuah sistem markah yang dapat berjalan di jaringan internet, yang pada akhirnya bapak Tim Berners-Lee ini kemudian membagi spesifikasi dari HTML serta merancang jaringan dan juga perangkat lunaknya pada akhir dari tahun 1990. Tim Berners-Lee ternyata tidak sendirian pada tahun itu juga (1990) ada seorang rekan yang membantunya untuk mendapatkan dana, seseorang tersebut merupakan insinyur sistem data pada saat itu yang ada dilembaga CERN ia bernama Robert Cailliau, tapi sayang permintaan dana untuk proyek mereka saat itu ditolak oleh CERN lembaga tempat mereka bekerja.
 
@@ -42,10 +47,10 @@ Sejarah Versi Dari HTML
 
 HTML 1.0 merupakan generasi pertama dari pada dokumen html. Html 1.0 inilah yang resmi di luncurkan pada tahun 1991. Pada versi pertama ini sedikit orang yang menggunakannya pada waktu itu, dikarenakan kurangnya fitur dan sintaks atau tag yang masih belum memadai(terbatas).
 
-<p>Contoh penulisan html 1.0 diawali dengan <html> </p>
+<p>Contoh penulisan html 1.0 diawali dengan <html></p>
 
 ```html
-<html> 
+<html>
 ```
 
 ### 2. HTML Versi 2.0
@@ -83,7 +88,7 @@ Contoh penulisan html 3.2
 
 ### 5. HTML Versi 4.01
 
-Sebelum HTML Versi 4.01 keluar, HTML Versi 4.0 yang lebih dulu ada. HTML 4.0 diluncurkan pada tahun 1997 tepatnya dibulan desember. HTML 4.0 ini mengalami perubahan besar karena sudah ada yang namanya CSS (Cascading Stylesheet) yaitu kode berbentuk skrip yang berguna untuk mempercantik dan mendesain tampilan halaman website. Akan tetapi pada tahun 1998 HTML dikembangkan lagi dan lahirlah HTML 4.01 yang merupakan perbaikan dari HTML 4.0 yaitu versi  sebelumnya.
+Sebelum HTML Versi 4.01 keluar, HTML Versi 4.0 yang lebih dulu ada. HTML 4.0 diluncurkan pada tahun 1997 tepatnya dibulan desember. HTML 4.0 ini mengalami perubahan besar karena sudah ada yang namanya CSS (Cascading Stylesheet) yaitu kode berbentuk skrip yang berguna untuk mempercantik dan mendesain tampilan halaman website. Akan tetapi pada tahun 1998 HTML dikembangkan lagi dan lahirlah HTML 4.01 yang merupakan perbaikan dari HTML 4.0 yaitu versi sebelumnya.
 
 Contoh penulisan html 4.01
 
