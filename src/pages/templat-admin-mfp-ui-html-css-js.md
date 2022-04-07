@@ -1,6 +1,6 @@
 ---
 setup: |
-  import Layout from '../../../layouts/PostLayout.astro'
+  import Layout from '../layouts/PostLayout.astro'
 title : Templat admin MFP UI responsive dan modern design
 description : Templat admin mfp ui merupakan templat yang dibuat khusus untuk tampilan administrator pada sebuah aplikasi web. Dibuat hanya dengan html css.
 date : 2021-11-12

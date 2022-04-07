@@ -1,7 +1,7 @@
 ---
 setup: |
-  import Layout from '../../../layouts/PostLayout.astro'
-title : Belajar css #11 mengatur font dengan css
+  import Layout from '../layouts/PostLayout.astro'
+title : Belajar css 11 mengatur font dengan css
 description : Di pembahasan artikel ini saya mencoba mengulas tentang bagaimana mengatur font dengan css. Properti-properti apa saja apa yang dipakai untuk font css
 date : 2022-03-10
 author : Moses Fahmi Pratama
@@ -10,7 +10,7 @@ categories :
   - CSS
 ---
 
-[![belajar mengatur font dengan css](https://blogger.googleusercontent.com/img/a/AVvXsEijHd9I2Gfie7wlQMnrB5eYUZQZMpsQmKW34eA-aNsJLGT5lYQmWEtYFeIM86QpoKNTuuSFUH0Ty3UuQ5voR6WQLORv_pJ7t2CZHfWdqoeAvP_IgcYn5MdXPTpqIhZlgOLvyDXahQUrXwqyhUtViBoAGAmgzk2kVRUZe_D2bTYfFdEVS-PWIkKZ59CB=s16000 "belajar mengatur font dengan css")](https://blogger.googleusercontent.com/img/a/AVvXsEijHd9I2Gfie7wlQMnrB5eYUZQZMpsQmKW34eA-aNsJLGT5lYQmWEtYFeIM86QpoKNTuuSFUH0Ty3UuQ5voR6WQLORv_pJ7t2CZHfWdqoeAvP_IgcYn5MdXPTpqIhZlgOLvyDXahQUrXwqyhUtViBoAGAmgzk2kVRUZe_D2bTYfFdEVS-PWIkKZ59CB=s1920)
+![belajar mengatur font dengan css](https://blogger.googleusercontent.com/img/a/AVvXsEijHd9I2Gfie7wlQMnrB5eYUZQZMpsQmKW34eA-aNsJLGT5lYQmWEtYFeIM86QpoKNTuuSFUH0Ty3UuQ5voR6WQLORv_pJ7t2CZHfWdqoeAvP_IgcYn5MdXPTpqIhZlgOLvyDXahQUrXwqyhUtViBoAGAmgzk2kVRUZe_D2bTYfFdEVS-PWIkKZ59CB=s16000 "belajar mengatur font dengan css")
 
 Halo sobat staykoding, di pembahasan kali ini saya mau kita belajar untuk mengenal apa-apa saja properti font yang ada di css.
 
@@ -34,11 +34,11 @@ Mengatur font dengan css
 
 Pada sebuah konten dihalaman website yang berbentuk tulisan, kita dapat mengatur setiap bentuk tulisan atau hurufnya dengan menggunakan properti di css yang dapat mengatur font/teks.
 
-Poperti-properti css yang dimaksud diantaranya font-family,  font-size, font-style, font-weight dan juga font-variant.
+Poperti-properti css yang dimaksud diantaranya font-family, font-size, font-style, font-weight dan juga font-variant.
 
 Berikut pembahasan dari kelima properti font css tersebut.
 
-### 1\. font family 
+### 1\. font family
 
 Properti css font-family merupakan properti yang mengatur jenis sebuah huruf/tulisan berdasarkan nama font yang digunakan.
 
@@ -73,16 +73,14 @@ Jika browser tidak mendukung font pertama, ia akan mencoba font kedua dan seteru
 
 Berikut contoh penggunaan daripada properti font-family.
 
-    
+```css
     p {
       font-family: "times new roman", serif;
     }
-
+```
 Pengaplikasian font-family
 
-copy
-
-    
+```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -100,8 +98,8 @@ copy
         <p>Saya suka belajar di StayKoding</p>
     </body>
     </html>
-
-Hasilnya 
+```
+Hasilnya
 
 [![hasil menggunakan properti font-family css](https://blogger.googleusercontent.com/img/a/AVvXsEjjko5zN2PytyM_IlaMU-aacNjcIgtV_tICVifL_t4T9GgIf9ZDQyMSdZAJUZLhjipNXo4WTJ_P7nGyOpkU1cGT4gg3H1A8jQC5M5Q4mlwOFqBCcv8prCk1-cRvl4xe8l9a0hZXs4jiuRiEhbNzMEaMQzfPbL6IFWOv5kRq2lheLXetCZX5JBaac_t5=s16000 "hasil menggunakan properti font-family css")](https://blogger.googleusercontent.com/img/a/AVvXsEjjko5zN2PytyM_IlaMU-aacNjcIgtV_tICVifL_t4T9GgIf9ZDQyMSdZAJUZLhjipNXo4WTJ_P7nGyOpkU1cGT4gg3H1A8jQC5M5Q4mlwOFqBCcv8prCk1-cRvl4xe8l9a0hZXs4jiuRiEhbNzMEaMQzfPbL6IFWOv5kRq2lheLXetCZX5JBaac_t5=s502)
 
