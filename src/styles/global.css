@@ -415,7 +415,8 @@ footer .copyright span {
 }
 .article-post main .body-post a {
   text-decoration: none;
-  color: var(--text-link);
+  background: linear-gradient(180deg, transparent, transparent 60%, #fbf36d 0, #fbf36d);
+  color: var(--text-p);
   font-family: "Roboto", sans-serif;
 }
 .article-post main .body-post blockquote {
@@ -452,6 +453,9 @@ footer .copyright span {
 }
 .article-post main .body-post pre code span {
   font-family: "Roboto", sans-serif !important;
+}
+.article-post main .body-post code {
+  color: #e83e8c;
 }
 .article-post main .body-post .quotes {
   width: 100%;
