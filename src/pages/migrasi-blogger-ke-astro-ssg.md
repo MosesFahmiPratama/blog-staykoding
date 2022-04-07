@@ -5,7 +5,7 @@ title : StayKoding migrasi dari blogger ke astro
 description : pindah dari blogger ke astro setelah lama terjun didunia blogging.
 date : 2022-04-04
 author : Moses Fahmi Pratama
-img : https://i.ibb.co/4pkJY3T/migrasi-staykoding-dari-blogger-ke-astro.webp
+img : https://drive.google.com/uc?id=1pNkB7u1qgskWkP6dPfUFHHJMQdoL6bd1
 categories : 
   - Astro
 featured : true
@@ -15,7 +15,7 @@ Setelah hampir 2 tahun saya menjalankan aktivitas blogging, akhirnya tepat ditan
 
 Blog StayKoding pindah platform dari sebelumnya yang menggunakan blogger saya sekarang migrasi ke Astro.
 
-![tahap-migrasi-staykoding-dari-blogger-ke-astro](https://i.ibb.co/4pkJY3T/migrasi-staykoding-dari-blogger-ke-astro.webp)
+![staykoding migrasi dari blogger ke astro](https://drive.google.com/uc?id=1pNkB7u1qgskWkP6dPfUFHHJMQdoL6bd1)
 
 Kemudian yang menjadi pertanyaan apa itu Astro, apakah itu sebuah CMS yang juga sama seperti blogger?
 
@@ -41,6 +41,8 @@ Dapa ditarik kesimpulan itu artinya kita menulis setiap postingan pada blog kita
 jadi singkatnya seperti itu.
 
 ## Alasan pindah dari Blogger ke Astro
+
+![tahap-migrasi-staykoding-dari-blogger-ke-astro](https://i.ibb.co/4pkJY3T/migrasi-staykoding-dari-blogger-ke-astro.webp)
 
 Ada banyak pertimbangan yang telah saya pikirkan sebelumnya, hal ini tentu saja berkaitan dengan persiapan dan kelancaran proses daripada migrasi blog ini.
 
