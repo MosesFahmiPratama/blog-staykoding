@@ -10,9 +10,13 @@ categories :
   - project web
 ---
 
-![bendera indo](https://drive.google.com/uc?id=1PzCNXyi8xnKJ04v3N5-Y3edXTlqOpNJJ)
+![bendera indonesia dengan html css](https://drive.google.com/uc?id=1PzCNXyi8xnKJ04v3N5-Y3edXTlqOpNJJ)
 
-Halo sobat semua, kali ini tepat di tanggal 17 agustus indonesia berulang tahun ke 76. Nah oleh karena itu saya tertarik untuk membuat sebuah karya melalui pemrograman dengan cara membuat bendera merah putih berkibar menggunakan html dan css saja.
+Setiap tanggal 17 agustus, kita pasti memperingati hari kemerdekaannya bangsa indonsia. Nah di pembahasan kita kali ini kita akan berkreasi bagaimana membuat bendera indonesia dengan html css saja.
+
+Bendera yang kita buat ini akan memiliki animasi seolah-olah benderanya berkibar dan bergerak.
+
+Untuk itu berikut langkah-langkah membuatnya!
 
 Langkah-langkah membuat bendera merah putih dengan html dan css
 ---------------------------------------------------------------
@@ -25,7 +29,11 @@ Langkah-langkah membuat bendera merah putih dengan html dan css
 
 3\. Buat sebuah file html dan css didalam direktori atau folder yang sudah sobat buat tadi.
 
+<div class="quotes">
+
 > Khusus untuk file css, buat dengan nama style.css
+
+</div>
 
 4\. Didalam file html yang sudah sobat buat tadi ketikan kode html dibawah ini
 
@@ -386,5 +394,3 @@ Langkah-langkah membuat bendera merah putih dengan html dan css
 6\. Terakhir buka file html nya di browser sobat dan secara otomatis akan tampil seperti gambar dibawah ini
 
 ![bendera indonesia dengan html css](https://1.bp.blogspot.com/-9OLYll_cQXY/YRtJYtI8UbI/AAAAAAAADi4/xkHj9YbCQQoHJigmD7a-vT9n9iPk_ZuOACNcBGAsYHQ/s16000/bendera-indonesia-dengan-html-css.jpg "bendera indonesia dengan html css")
-
-**Baca juga: [Tutorial membuat social media icons dengan html css](https://www.staykoding.com/2022/01/membuat-social-media-icons-html-css.html)**

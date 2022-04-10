@@ -14,7 +14,7 @@ Sebelumnya kita telah belajar mengenai [pengertian html dan struktur dasar dari 
 
 Apa sebenarnya tag itu? Lalu apa itu atribut? Serta ada lagi yang dinamakan elemen itu apa dalam html? Oleh karena itu berikut akan saya jelaskan ketiga pengertian dari tag, atribut dan elemen.
 
-[![mengenal apa itu tag, atribut dan elemen html](https://1.bp.blogspot.com/-XyLiO5jTNz0/YH3cQubwfgI/AAAAAAAACHM/JG6rQ0y8wFsus4JrtUfiHBd2c30wl4O0gCNcBGAsYHQ/s16000/mengenal-apa-tag-atribut-dan-elemen-html.jpg "mengenal apa itu tag, atribut dan elemen html")](https://1.bp.blogspot.com/-XyLiO5jTNz0/YH3cQubwfgI/AAAAAAAACHM/JG6rQ0y8wFsus4JrtUfiHBd2c30wl4O0gCNcBGAsYHQ/s1280/mengenal-apa-tag-atribut-dan-elemen-html.jpg)
+![mengenal apa itu tag, atribut dan elemen html](https://1.bp.blogspot.com/-XyLiO5jTNz0/YH3cQubwfgI/AAAAAAAACHM/JG6rQ0y8wFsus4JrtUfiHBd2c30wl4O0gCNcBGAsYHQ/s16000/mengenal-apa-tag-atribut-dan-elemen-html.jpg "mengenal apa itu tag, atribut dan elemen html")
 
   
 
@@ -58,7 +58,7 @@ terjun belajar didunia pemrograman web
 </p>
 ```
 
-Nah dari contoh diatas yang dimaksud dengan atribut pada tag &lt;p&gt;&lt;/p&gt; adalah **id=""** dalam tag &lt;p&gt;&lt;/p&gt; tersebut. 
+Nah dari contoh diatas yang dimaksud dengan atribut pada tag &lt;p&gt;&lt;/p&gt; adalah **id=""** dalam tag &lt;p&gt;&lt;/p&gt; tersebut.
 
 Atribut id pada tag &lt;p&gt; diatas berfungsi untuk memberikan identitas pada tag &lt;p&gt;&lt;/p&gt; yang telah kita buat sebelumnya.
 

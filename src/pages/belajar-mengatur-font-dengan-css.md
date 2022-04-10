@@ -51,6 +51,8 @@ Terdapat 2 tipe/jenis penamaan dari font family di css:
 
 Berikut adalah tabel nama font umum(font generic) yang paling umum dengan beberapa nama font family yang ada di css.
 
+<div class="table">
+
 | generic name | font family |
 | --- | --- |
 | serif | "Times New Roman'", Georgia, Lucida Bright, Lucida Fax, Palatino, "Palatino Linotype", Palladio, "URW Palladio" |
@@ -59,7 +61,13 @@ Berikut adalah tabel nama font umum(font generic) yang paling umum dengan bebera
 | cursive | "Brush Script MT", "Brush Script Std", "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery" |
 | fantasy | Papyrus, Herculanum, Party LET Curlz MT, Harrington |
 
+</div>
+
+<div class="quotes">
+
 > Catatan! Disarankan untuk mengutip nama font family dengan beberapa kata, misalnya "Lucida Console" (tanda kutip ganda), 'Liberation Mono (tanda kutip tunggal).
+
+</div>
 
 Properti CSS font-family menentukan daftar keluarga font yang diprioritaskan.
 

@@ -11,7 +11,7 @@ categories:
   - PHP
 ---
 
-[![sejarah bahasa pemrograman php](https://1.bp.blogspot.com/-ry2HEWZxQ2g/YHLyaLMdXyI/AAAAAAAACDM/1WZ2zKog6o4-asWnMNd2gZMyhDpMKKpyACNcBGAsYHQ/s16000/sejarah-bahasa-pemrograman-php.jpg "sejarah bahasa pemrograman php")](https://1.bp.blogspot.com/-ry2HEWZxQ2g/YHLyaLMdXyI/AAAAAAAACDM/1WZ2zKog6o4-asWnMNd2gZMyhDpMKKpyACNcBGAsYHQ/s700/sejarah-bahasa-pemrograman-php.jpg)
+![sejarah bahasa pemrograman php](https://1.bp.blogspot.com/-ry2HEWZxQ2g/YHLyaLMdXyI/AAAAAAAACDM/1WZ2zKog6o4-asWnMNd2gZMyhDpMKKpyACNcBGAsYHQ/s16000/sejarah-bahasa-pemrograman-php.jpg "sejarah bahasa pemrograman php")
 
 Hai sobat staykoder, kali ini kita akan mempelajari mengenai **sejarah bahasa pemrograman PHP**. Karena bahasa pemrograman PHP merupakan bahasa yang populer di kalangan web developer sebagai bahasa pemrograman yang menangani sisi server sebuah website.
 
