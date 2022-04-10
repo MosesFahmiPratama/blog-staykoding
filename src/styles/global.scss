@@ -472,7 +472,13 @@ footer {
 				border-radius: 5px;
 				box-shadow: 0 2px 8px 0 rgb(60 64 67 / 11% );
 			}
-			table {
+			iframe {
+			  width: 100%;
+			}
+			.table {
+			  width: 100%;
+			  overflow-x: auto;
+			  table {
 			  border-collapse: collapse;
 			  text-align: center;
 			  
@@ -505,6 +511,7 @@ footer {
 			    }
 			  }
 			}
+		  }
 			pre {
 			  code {
 			  font-size: 1em;
