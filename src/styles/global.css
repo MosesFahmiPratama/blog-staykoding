@@ -448,6 +448,25 @@ footer .copyright span {
   border-radius: 5px;
   box-shadow: 0 2px 8px 0 rgba(60, 64, 67, 0.11);
 }
+.article-post main .body-post table {
+  border-collapse: collapse;
+  text-align: center;
+}
+.article-post main .body-post table thead tr {
+  background: #ddd6f3;
+}
+.article-post main .body-post table thead tr th {
+  padding: 10px;
+}
+.article-post main .body-post table tbody tr:nth-child(odd) {
+  background: white;
+}
+.article-post main .body-post table tbody tr:nth-child(even) {
+  background: #ece9e6;
+}
+.article-post main .body-post table tbody tr td {
+  padding: 10px;
+}
 .article-post main .body-post pre code {
   font-size: 1em;
 }

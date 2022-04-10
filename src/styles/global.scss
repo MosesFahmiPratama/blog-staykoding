@@ -472,6 +472,39 @@ footer {
 				border-radius: 5px;
 				box-shadow: 0 2px 8px 0 rgb(60 64 67 / 11% );
 			}
+			table {
+			  border-collapse: collapse;
+			  text-align: center;
+			  
+			  thead {
+			    
+			    tr {
+			      background: #ddd6f3;
+			      
+			      th {
+			        padding: 10px;
+			      }
+			    }
+			  }
+			  
+			  tbody {
+			    
+			    tr {
+			      
+			       &:nth-child(odd) {
+			         background: white;
+			       }
+			       
+			       &:nth-child(even) {
+			         background: #ece9e6;
+			       }
+			       
+			       td {
+			         padding: 10px;
+			       }
+			    }
+			  }
+			}
 			pre {
 			  code {
 			  font-size: 1em;
