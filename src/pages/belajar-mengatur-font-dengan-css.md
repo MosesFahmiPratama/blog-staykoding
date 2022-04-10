@@ -101,7 +101,7 @@ Pengaplikasian font-family
 ```
 Hasilnya
 
-[![hasil menggunakan properti font-family css](https://blogger.googleusercontent.com/img/a/AVvXsEjjko5zN2PytyM_IlaMU-aacNjcIgtV_tICVifL_t4T9GgIf9ZDQyMSdZAJUZLhjipNXo4WTJ_P7nGyOpkU1cGT4gg3H1A8jQC5M5Q4mlwOFqBCcv8prCk1-cRvl4xe8l9a0hZXs4jiuRiEhbNzMEaMQzfPbL6IFWOv5kRq2lheLXetCZX5JBaac_t5=s16000 "hasil menggunakan properti font-family css")](https://blogger.googleusercontent.com/img/a/AVvXsEjjko5zN2PytyM_IlaMU-aacNjcIgtV_tICVifL_t4T9GgIf9ZDQyMSdZAJUZLhjipNXo4WTJ_P7nGyOpkU1cGT4gg3H1A8jQC5M5Q4mlwOFqBCcv8prCk1-cRvl4xe8l9a0hZXs4jiuRiEhbNzMEaMQzfPbL6IFWOv5kRq2lheLXetCZX5JBaac_t5=s502)
+![hasil menggunakan properti font-family css](https://blogger.googleusercontent.com/img/a/AVvXsEjjko5zN2PytyM_IlaMU-aacNjcIgtV_tICVifL_t4T9GgIf9ZDQyMSdZAJUZLhjipNXo4WTJ_P7nGyOpkU1cGT4gg3H1A8jQC5M5Q4mlwOFqBCcv8prCk1-cRvl4xe8l9a0hZXs4jiuRiEhbNzMEaMQzfPbL6IFWOv5kRq2lheLXetCZX5JBaac_t5=s16000 "hasil menggunakan properti font-family css")
 
   
 
@@ -120,16 +120,15 @@ Niai yang digunakan oleh properti font-size diantaranya.
 
 Contoh penggunaan properti font-size untuk elemen p berikut.
 
-    
+```css
     p {
       font-size: medium;
     }
+```
 
 Pengaplikasian font-size css
 
-copy
-
-    
+```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -147,14 +146,11 @@ copy
         <p>Saya menggunakan properti font-size dengan nilai medium</p>
     </body>
     </html>
+```
 
 Hasilnya
 
-[![hasil menggunakan properti font-size css](https://blogger.googleusercontent.com/img/a/AVvXsEjDHf0JjxG2UhwrM9vnPHq-ZLuArPvHLQk4nQaAzB9F2s9aURXYGqMpUWpPBd53yW8pJpLy5g8S2cDiEABEh3Pn40KYGOhLaFlx3WQbn4_qBONvjuk6nF0oHgWqWH0ThwPsgNQAGzVv2MpJZt1SKer14SMxda5aAWxw5wG3B6TUzAOQoBaMeaBQn416=s16000 "hasil menggunakan properti font-size css")](https://blogger.googleusercontent.com/img/a/AVvXsEjDHf0JjxG2UhwrM9vnPHq-ZLuArPvHLQk4nQaAzB9F2s9aURXYGqMpUWpPBd53yW8pJpLy5g8S2cDiEABEh3Pn40KYGOhLaFlx3WQbn4_qBONvjuk6nF0oHgWqWH0ThwPsgNQAGzVv2MpJZt1SKer14SMxda5aAWxw5wG3B6TUzAOQoBaMeaBQn416=s504)
-
-  
-
-  
+![hasil menggunakan properti font-size css](https://blogger.googleusercontent.com/img/a/AVvXsEjDHf0JjxG2UhwrM9vnPHq-ZLuArPvHLQk4nQaAzB9F2s9aURXYGqMpUWpPBd53yW8pJpLy5g8S2cDiEABEh3Pn40KYGOhLaFlx3WQbn4_qBONvjuk6nF0oHgWqWH0ThwPsgNQAGzVv2MpJZt1SKer14SMxda5aAWxw5wG3B6TUzAOQoBaMeaBQn416=s16000 "hasil menggunakan properti font-size css")
 
 #### Mengatur ukuran font menggunakan pixels
 
@@ -164,10 +160,11 @@ Perlu untuk diketahui nilai px bersifat statis.
 
 Contoh penggunaan nilai px pada properti font-size.
 
-    
+```css
     p {
       font-size: 30px;
     }
+```
 
 #### Mengatur ukuran font menggunakan em
 
@@ -179,13 +176,14 @@ Untuk mengonversi px menjadi em, gunakan rumus ini: em = piksel/16.
 
 Berikut contoh penggunaan ukuran em untuk properti font-size.
 
-    
+```css
     #p1 {
        font-size: 1em;
     }
     #p2 {
        font-size: 2em;
     }
+```
 
 ### 3\. font style
 
@@ -199,7 +197,7 @@ Nilai yang biasanya digunakan untuk font-style ialah.
 
 Contoh bagaimana menggunakan properti font-style dengan 3 nilai diatas
 
-    
+```css
     #p1 {
         font-style: normal;
     }
@@ -209,12 +207,11 @@ Contoh bagaimana menggunakan properti font-style dengan 3 nilai diatas
     #p3 {
         font-style: oblique;
     }
+```
 
 Pengaplikasian font-style css
 
-copy
-
-    
+```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -240,14 +237,11 @@ copy
         <p id="p3">Saya menggunakan properti font-style dengan nilai oblique</p>
     </body>
     </html>
+```
 
 Hasilnya
 
-[![hasil menggunakan properti font-style css](https://blogger.googleusercontent.com/img/a/AVvXsEjVsLtLQCnjl-dmNZrCP0-qfRmwmQwaq0hZ-DsGCLCbZDpsfLqmgxgHFoItKgQ9_E--8txri4_Su8Saht3MQvLHgfJTM_kVi-cl54VctWgJa0l7lsQRs136lmJW7eYwM4JqH6Gr_M1OpdbX4sF1ll87Km7xmbtG15pU8wPu3-uxr_3rcjXG1MeZ3xqP=s16000 "hasil menggunakan properti font-style css")](https://blogger.googleusercontent.com/img/a/AVvXsEjVsLtLQCnjl-dmNZrCP0-qfRmwmQwaq0hZ-DsGCLCbZDpsfLqmgxgHFoItKgQ9_E--8txri4_Su8Saht3MQvLHgfJTM_kVi-cl54VctWgJa0l7lsQRs136lmJW7eYwM4JqH6Gr_M1OpdbX4sF1ll87Km7xmbtG15pU8wPu3-uxr_3rcjXG1MeZ3xqP=s502)
-
-  
-
-  
+![hasil menggunakan properti font-style css](https://blogger.googleusercontent.com/img/a/AVvXsEjVsLtLQCnjl-dmNZrCP0-qfRmwmQwaq0hZ-DsGCLCbZDpsfLqmgxgHFoItKgQ9_E--8txri4_Su8Saht3MQvLHgfJTM_kVi-cl54VctWgJa0l7lsQRs136lmJW7eYwM4JqH6Gr_M1OpdbX4sF1ll87Km7xmbtG15pU8wPu3-uxr_3rcjXG1MeZ3xqP=s16000 "hasil menggunakan properti font-style css")
 
 ### 4\. font weight
 
@@ -258,12 +252,12 @@ Berikut nilai yang dipakai untuk properti font-weight ini.
 * <number\> : nilai yang menggunakan angka dari 1 sampai 1000 untuk ketebalan font.
 * normal : mengatur sebuah font ke ketebalan yang normal yaitu sama dengan nilai number 400.
 * bold : menebalkan font, jika dikonversi ke number maka bold = 700.
-* lighter : mengatur bobot font menjadi lebih ringan dari bobot font elemen induknya yang tersedia.
+* lighter: mengatur bobot font menjadi lebih ringan dari bobot font elemen induknya yang tersedia.
 * bolder : menetapkan bobot font menjadi lebih berat daripada bobot font elemen induknya yang tersedia.
 
 Agar lebih paham coba pahami contoh penggunaan properti font-weight berikut.
 
-    
+```css
     #p1 {
         font-weight: normal;
     }
@@ -279,12 +273,11 @@ Agar lebih paham coba pahami contoh penggunaan properti font-weight berikut.
     #p5 {
         font-weight: 1000;
     }
+```
 
 Pengaplikasian font-weight css
 
-copy
-
-    
+```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -318,14 +311,11 @@ copy
         <p id="p5">Saya menggunakan properti font-weight dengan nilai 1000</p>
     </body>
     </html>
+```
 
 Hasilnya
 
-[![hasil menggunakan properti font-weight css](https://blogger.googleusercontent.com/img/a/AVvXsEiL7Ld3d3a2enTEI8S6NGziiEr2pOOEDQPOEOF0onRwiBul9ghAxJk3x5jmzxkz5M96Rgwqb9b2OIC5PyLx5Wuk3UQezqOPbd8wXwSUFh0mF0MmcbLUW2CsoFGcOpd70uq_I3aYWAjyeI0AZyNpZ8slqGW5FD-UIvO7uBSvuRHH7m7d3pm-TYT8MF2L=s16000 "hasil menggunakan properti font-weight css")](https://blogger.googleusercontent.com/img/a/AVvXsEiL7Ld3d3a2enTEI8S6NGziiEr2pOOEDQPOEOF0onRwiBul9ghAxJk3x5jmzxkz5M96Rgwqb9b2OIC5PyLx5Wuk3UQezqOPbd8wXwSUFh0mF0MmcbLUW2CsoFGcOpd70uq_I3aYWAjyeI0AZyNpZ8slqGW5FD-UIvO7uBSvuRHH7m7d3pm-TYT8MF2L=s500)
-
-  
-
-  
+![hasil menggunakan properti font-weight css](https://blogger.googleusercontent.com/img/a/AVvXsEiL7Ld3d3a2enTEI8S6NGziiEr2pOOEDQPOEOF0onRwiBul9ghAxJk3x5jmzxkz5M96Rgwqb9b2OIC5PyLx5Wuk3UQezqOPbd8wXwSUFh0mF0MmcbLUW2CsoFGcOpd70uq_I3aYWAjyeI0AZyNpZ8slqGW5FD-UIvO7uBSvuRHH7m7d3pm-TYT8MF2L=s16000 "hasil menggunakan properti font-weight css")
 
 ### 5\. font variant
 
@@ -338,19 +328,18 @@ Ada 2 nilai yang digunakan oleh properti ini.
 
 Bingung untuk penggunaan nilainya? Lihat contoh berikut untuk font-variant.
 
-    
+```css
     #p1 {
         font-variant: normal;
     }
     #p2 {
         font-variant: small-caps;
     }
+```
 
 Pengaplikasian font-variant css
 
-copy
-
-    
+```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -372,20 +361,17 @@ copy
         <p id="p2">Saya Menggunakan Properti Font-variant Dengan Nilai small-caps</p>
     </body>
     </html>
+```
 
 Hasilnya
 
-[![hasil menggunakan properti font-variant css](https://blogger.googleusercontent.com/img/a/AVvXsEhq-z3iM1jmG-UT6nKOUwWBcip9sW4OV_0r9GNhXkBrJS4wneZ-Z53KqW5liQrdRkgDdIkHobeXPeZ27TP6q0PXwZPFSWJ1LDSzTbrzcz_jg5Y-4AsvVOCxHam4mGIVyHss_F840El9egYCzHHZP1NwBMZPi7O9ZLpq4SBTvpFVIq6yr40GguTKn2CA=s16000 "hasil menggunakan properti font-variant css")](https://blogger.googleusercontent.com/img/a/AVvXsEhq-z3iM1jmG-UT6nKOUwWBcip9sW4OV_0r9GNhXkBrJS4wneZ-Z53KqW5liQrdRkgDdIkHobeXPeZ27TP6q0PXwZPFSWJ1LDSzTbrzcz_jg5Y-4AsvVOCxHam4mGIVyHss_F840El9egYCzHHZP1NwBMZPi7O9ZLpq4SBTvpFVIq6yr40GguTKn2CA=s502)
-
-  
-
-  
+![hasil menggunakan properti font-variant css](https://blogger.googleusercontent.com/img/a/AVvXsEhq-z3iM1jmG-UT6nKOUwWBcip9sW4OV_0r9GNhXkBrJS4wneZ-Z53KqW5liQrdRkgDdIkHobeXPeZ27TP6q0PXwZPFSWJ1LDSzTbrzcz_jg5Y-4AsvVOCxHam4mGIVyHss_F840El9egYCzHHZP1NwBMZPi7O9ZLpq4SBTvpFVIq6yr40GguTKn2CA=s16000 "hasil menggunakan properti font-variant css")
 
 ### Shorthand properti font css
 
 Dari kelima properti untuk mengatur font css diatas yang telah saya jelaskan. Sebenarnya ada 1 properti untuk font yang sangat singkat tanpa perlu menuliskan properti font cssnya satu persatu. Oke, misalkan kita mempunyai bentuk styling font seperti berikut.
 
-    
+```css
     p {
       font-style: oblique;
       font-variant: small-caps;
@@ -393,6 +379,7 @@ Dari kelima properti untuk mengatur font css diatas yang telah saya jelaskan. Se
       font-size: 3em;
       font-family: "times new roman", sans-serif;
     }
+```
 
 Contoh styling font css diatas terlihat kita harus menuliskan banyak sekaligus properti untuk mengatur font css-nya. Daripada menuliskan banyak properti font cssnya lebih baik menggunakan cara berikut.
 
@@ -400,22 +387,23 @@ Perlu kamu tahu untuk mengatur font css tanpa memakai banyak properti font, kita
 
 Berikut sintax-nya:
 
-    
+```css
     p {
       font: font-style font-variant font-weight font-size/line-height font-family;
     }
+```
 
 Berikut contoh sintax kodenya dengan menggunakan properti font.
 
-    
+```css
     p {
       font: oblique small-caps bolder 3em "times new roman", sans-serif;
     }
+```
 
 Pengaplikasian properti shorthand font css
 
-copy
-
+```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -433,13 +421,14 @@ copy
         <p>Saya menggunakan properti font dengan banyak nilai</p>
     </body>
     </html>
+```
 
 Hasilnya
 
-[![hasil menggunakan shorthand properti font css](https://blogger.googleusercontent.com/img/a/AVvXsEis1wwChGF7mchUR2bJqbgwrEfvj0SCJfi0rECl1NKXlflr7dIGm6qEPqkAnLyeJE8s0kga-JcP51x4XV5w2JVsYWUQlzDfXKkNjMSNCakqg0UggYUlq9SkYE4d06k_2BzS5H4PJO84QgppeiN6aEZOxRGYd-RdsfbEhSOW-BlhJyeJaxS9gDwzJXz3=s16000 "hasil menggunakan shorthand properti font css")](https://blogger.googleusercontent.com/img/a/AVvXsEis1wwChGF7mchUR2bJqbgwrEfvj0SCJfi0rECl1NKXlflr7dIGm6qEPqkAnLyeJE8s0kga-JcP51x4XV5w2JVsYWUQlzDfXKkNjMSNCakqg0UggYUlq9SkYE4d06k_2BzS5H4PJO84QgppeiN6aEZOxRGYd-RdsfbEhSOW-BlhJyeJaxS9gDwzJXz3=s502)
+![hasil menggunakan shorthand properti font css](https://blogger.googleusercontent.com/img/a/AVvXsEis1wwChGF7mchUR2bJqbgwrEfvj0SCJfi0rECl1NKXlflr7dIGm6qEPqkAnLyeJE8s0kga-JcP51x4XV5w2JVsYWUQlzDfXKkNjMSNCakqg0UggYUlq9SkYE4d06k_2BzS5H4PJO84QgppeiN6aEZOxRGYd-RdsfbEhSOW-BlhJyeJaxS9gDwzJXz3=s16000 "hasil menggunakan shorthand properti font css")
 
   
 
-Cukup sampai disini dahulu pembelajaran  kita mengenai properti font di css, semoga membantu bagi kamu yang sedang belajar css untuk pemrograman website. Sekian artikel StayKoding kali ini saya ucapkan terimakasih.
+Cukup sampai disini dahulu pembelajaran kita mengenai properti font di css, semoga membantu bagi kamu yang sedang belajar css untuk pemrograman website. Sekian artikel StayKoding kali ini saya ucapkan terimakasih.
 
 > 📖 Temukan artikel belajar css dasar lainnya di [Tutorial Belajar Lengkap CSS](https://www.staykoding.com/p/tutorial-lengkap-belajar-css.html)
