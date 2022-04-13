@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import '../styles/prismjs.css';
+import { GoogleAnalytics } from 'astro-analytics';
 let {title,description,author} = Astro.props;
 let URLcanonical = Astro.request.canonicalURL.href;
 console.log(URLcanonical)
@@ -15,4 +16,5 @@ console.log(URLcanonical)
 	<meta name="canonical" content={URLcanonical} />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <GoogleAnalytics id="UA-165965130-4" />
 
