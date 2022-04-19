@@ -11,7 +11,7 @@ export default defineConfig({
   vite: {
     ssr: {
       external: ["svgo"],
-    },
+    }
   },
   markdownOptions: {
     render: [
